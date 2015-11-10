@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E4E3927-D938-1E07-5B68-60628478FEB7" name="F15.E4project">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:45:49 UTC</createdTime>
+<generatorID>9047B45C-63C1-C53D-9967-540A891A8C93</generatorID>
+<ownerDesignName>ARL_DATA_MODELS_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_id" id="83E07E99-63E4-06AF-8D93-A8E0E1FA6497">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:45:49 UTC</createdTime>
+<generatorID>5645525A-D293-2911-9C39-63A9FFFF1683</generatorID>
+<ownerDesignName>ARL_DATA_MODELS_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.E4lab_lab_id" id="2E8AF72F-4499-BEC4-8EFE-D36F5FA92BF2">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:45:49 UTC</createdTime>
+<generatorID>FFC8E9EE-2058-C380-E576-DFB1891ABBDC</generatorID>
+<ownerDesignName>ARL_DATA_MODELS_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5942E4D-8901-1BC1-E8A0-C2EC67D61DF3" referredColumn="BAF37A18-42DB-B59F-6FF1-1C9E87DFC868"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77A49309-D0DD-AE20-ED57-EE452CE435DB" name="F15.E4project_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:45:49 UTC</createdTime>
+<generatorID>D5C48CA4-8880-BFE3-6F03-ADB396EB3257</generatorID>
+<ownerDesignName>ARL_DATA_MODELS_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E07E99-63E4-06AF-8D93-A8E0E1FA6497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DEA7387-F2BB-2FC5-3E48-BC9265DE9669" name="F15.E4project_F15.E4lab_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:45:50 UTC</createdTime>
+<generatorID>C937BC10-0CA3-1DB8-A95B-74A5A4A47A48</generatorID>
+<ownerDesignName>ARL_DATA_MODELS_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E8AF72F-4499-BEC4-8EFE-D36F5FA92BF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AD8E9D1-BDD5-A867-FA8C-A5FBF4A5F406" name="F15.E4lab">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>B705EBB5-2588-B5FF-AD0B-89B29F34FDD8</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab id" id="B03B654C-4C08-E16C-5AC8-F19408CBFFD5">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>1D17A5E0-3F6C-4393-036B-6823A2D1F6B4</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0FCBA318-C671-4B73-A1ED-C87316254968" name="F15.E4lab PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>D0C313C6-F86E-B7AE-F26B-B370CE47C058</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B03B654C-4C08-E16C-5AC8-F19408CBFFD5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

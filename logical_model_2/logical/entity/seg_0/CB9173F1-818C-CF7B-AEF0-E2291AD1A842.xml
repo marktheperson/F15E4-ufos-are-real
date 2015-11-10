@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB9173F1-818C-CF7B-AEF0-E2291AD1A842" name="Relation 3">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>F37B5CD7-9942-E30B-6668-7A5BB74DC10E</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="F15.E4emp emp id" id="1E7E8063-62A3-0128-3CD0-844C74149108">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>396DEE54-22F3-5CF6-7A29-31D47207738E</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<referedAttribute>0525818E-53C4-D077-2DF3-2054437853F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15.E4RFE rfe id" id="F6B1335C-5114-5657-26F6-BB1E261E6157">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>0DB6BE55-1D39-D8EB-2C1D-9EB44D65FAAC</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<referedAttribute>AE10935E-FD40-841A-B386-33FF06172ADC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73869384-03A3-7C93-0E1F-C289D9C1DD32" name="Relation 3 PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>1E3E4365-1CBE-68FF-103D-5ADCD1D8097A</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E7E8063-62A3-0128-3CD0-844C74149108</attributeRef>
+<attributeRef>F6B1335C-5114-5657-26F6-BB1E261E6157</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="379AA277-3B51-3FE5-C10D-7944EA50BDA1" name="F15.E4RFE_tasks">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 20:50:33 UTC</createdTime>
+<ownerDesignName>ARL_DATA_MODELS</ownerDesignName>
+<engineerTo>
+<item key="3E52F16E-A3B5-4630-CB70-0A59A97A3928" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="effective_date" id="6C2CBFDC-6B38-0919-0F4A-6742A5F96691">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 20:53:10 UTC</createdTime>
+<ownerDesignName>ARL_DATA_MODELS</ownerDesignName>
+<engineerTo>
+<item key="3E52F16E-A3B5-4630-CB70-0A59A97A3928" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_abbreviation" id="62CD59F0-7087-9844-1578-61F232821089">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 20:53:23 UTC</createdTime>
+<ownerDesignName>ARL_DATA_MODELS</ownerDesignName>
+<engineerTo>
+<item key="3E52F16E-A3B5-4630-CB70-0A59A97A3928" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_description" id="C8A4B346-A8F9-3A4A-6329-A5FA3D603B33">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 20:53:35 UTC</createdTime>
+<ownerDesignName>ARL_DATA_MODELS</ownerDesignName>
+<engineerTo>
+<item key="3E52F16E-A3B5-4630-CB70-0A59A97A3928" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="78245E7F-4D30-4A2B-5C9F-AF474848735D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 20:54:04 UTC</createdTime>
+<generatorID>84325209-DEBC-F44A-3D70-ADAD3D83DBEC</generatorID>
+<ownerDesignName>ARL_DATA_MODELS</ownerDesignName>
+<engineerTo>
+<item key="3E52F16E-A3B5-4630-CB70-0A59A97A3928" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>28D6D09A-AE44-D0EC-11FF-DA148AD7699F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,275 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E011EF31-D189-3ED4-5055-BD5C0988BD08" name="F15.E4emp">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>25A20838-A792-72ED-9E38-FCC4C88255AC</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp id" id="0525818E-53C4-D077-2DF3-2054437853F0">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>111C9695-1629-B95D-57EC-2706A1A123DC</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp name" id="1C9E7A90-0B40-A656-19C2-32B4B45D9419">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>7C4472FA-F336-ED61-AA10-5CBE45FD9C73</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp lab" id="388BDB17-840E-9C85-0766-F24F0ECC05AF">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>24D84656-2DF3-BA53-1786-F2B9CCB55FD8</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp email" id="37495846-4593-071A-7E0D-9C42001678DE">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>26DC0081-F8D3-4ACF-9874-5C7609054E8C</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp office" id="BFB35FDE-9EC5-8058-174D-F2FE1B04770B">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>5873D73F-A323-B30B-FE43-4B06B597F8C7</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp phone" id="4B57B109-6081-FEC1-61EB-9E57EBD008F6">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>C1F5787B-204B-BE6F-DAE3-4CFA43DC7D88</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp status" id="B290766D-4514-064F-90C5-A2DB3A0DB6DA">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>F22E63E0-0DAC-E19A-BDE6-FD4BA98EFC19</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status eff date" id="DBA48837-3773-52D6-6842-753D21FF5979">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>85E84A38-4E9E-46FC-4E31-02C657AC661C</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="system admin flag" id="587B6D68-EA42-0127-D604-F9D05768B0D6">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>03B052A7-06CC-0D35-CD65-527A96BC6E67</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab director flag" id="4B544E60-0496-B2C9-E5F9-B9C34B8481AC">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>5BC51CC6-BFE0-B83A-2EC9-0D388CAE57DC</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exec director flag" id="5AEBA964-877B-B5DA-49B8-0C99B6E23CFB">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>3320A73D-DA04-2B4C-A480-E12BCC8EDCB4</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chairperson flag" id="86D9D79D-5523-35E7-F331-94FC844AACD8">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>4EC366E6-93EB-D621-5ED0-F3C11AB410F1</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective date" id="36876842-EF68-1530-4066-E413011C3F42">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>4B035E59-43B2-3EA6-20AC-04F8B193B3A0</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="5A8B21E4-4F20-60B3-98A0-6A99DBBD2C10">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>1D3B75EC-97FC-6EB7-D787-09F341CD3C40</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15.E4RFE rfe id" id="0715F4D6-F5E0-88CA-438A-69BC21ABF62D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>4C344B57-8129-62CE-B81B-40E43551338A</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AE10935E-FD40-841A-B386-33FF06172ADC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15.E4role codes role code" id="A0940D76-3BCD-358A-19D6-AA3351AEC1E3">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>AE87FA81-3637-9050-BAAD-7FE012CA0765</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CB863F73-5791-690D-EEDD-F6570CF32630</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15.E4lab lab id" id="1FC36748-A5C8-DD23-5256-6BC14913117A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>3E1D399E-94A2-80F6-5222-EE9DE40F3AB0</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>79A7D5A0-7D7A-7DFB-F399-8BB210257094</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C94261E1-441C-3925-B3F3-8BC891D77322" name="F15.E4emp PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:32:56 UTC</createdTime>
+<generatorID>DF88856C-71B8-B90F-D2A1-114D6D09F679</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<engineerTo>
+<item key="E3484B71-BB2A-A2DD-122D-96834F74948C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0525818E-53C4-D077-2DF3-2054437853F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

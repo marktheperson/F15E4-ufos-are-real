@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E4EB0B6-7C9A-1A54-8814-24CD0E146C3F" name="F15.E4RFE document">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:51:59 UTC</createdTime>
+<generatorID>5E2F329D-0918-BBEF-A4D2-690B559EA93B</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="B6A692BA-64B7-6583-DE42-C286626C8B8C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document id" id="BD57F366-E5EE-B1F0-2B74-4ADCC9570AD2">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:51:59 UTC</createdTime>
+<generatorID>1A8F3AB2-F687-C4CF-BCDF-1B2B63ED993C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="B6A692BA-64B7-6583-DE42-C286626C8B8C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15.E4RFE rfe id" id="B5E822C7-CDD6-2781-6177-DD979556C1EF">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:51:59 UTC</createdTime>
+<generatorID>6030DE12-AEBF-4109-34D2-95842C58380C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="B6A692BA-64B7-6583-DE42-C286626C8B8C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>68945C7E-7473-3E5D-4D3A-64F7B21F44FC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="202C8FC3-ACEB-1B34-45A1-56925272E2F6" name="F15.E4RFE document PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:51:59 UTC</createdTime>
+<generatorID>1624F76E-E2C9-3611-67E1-C807C3D7A713</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="B6A692BA-64B7-6583-DE42-C286626C8B8C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD57F366-E5EE-B1F0-2B74-4ADCC9570AD2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

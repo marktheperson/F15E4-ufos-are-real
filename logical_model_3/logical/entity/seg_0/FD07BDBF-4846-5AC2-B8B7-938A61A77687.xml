@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD07BDBF-4846-5AC2-B8B7-938A61A77687" name="F15.E4role codes">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>6F86E6E1-59BA-9266-0725-CC5740D4D292</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="role code" id="D83407A8-8E9E-65AE-1253-69DFFAA6C545">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>CE153BEA-5E62-9AFF-082A-F4E47549F71D</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role type" id="08E4E175-125F-3E14-35A8-11F58D68D71D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>7FE6DFFE-F82B-9458-2CE4-3E0197CE6558</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="ADAC23A4-2D78-3E9E-9A09-0238067BCF77">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>40945D37-7059-2CB7-8826-0093E16E935D</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E0749EE4-CB4E-D688-9D2C-9CF84F9E7D36" name="F15.E4role codes PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-27 21:47:59 UTC</createdTime>
+<generatorID>33E9EED5-B7B5-D5AE-BF3F-E37F08693BE4</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D83407A8-8E9E-65AE-1253-69DFFAA6C545</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E159D425-89ED-6386-0342-569069EBAF7A" name="F15.E4RFE_tasks">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>379AA277-3B51-3FE5-C10D-7944EA50BDA1</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="effective_date" id="7D536D1A-638B-2474-AD14-9F5A2DBF507A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>6C2CBFDC-6B38-0919-0F4A-6742A5F96691</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbreviation" id="4AD92D9A-7D21-CE07-3676-2E66C95348BF">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>62CD59F0-7087-9844-1578-61F232821089</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_description" id="21AE450F-8E20-EC47-07F5-8C620243686B">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>C8A4B346-A8F9-3A4A-6329-A5FA3D603B33</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.E4RFE_rfe_id" id="E7E08CD8-8FA1-EE41-F55F-8C2A547D93A2">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>78245E7F-4D30-4A2B-5C9F-AF474848735D</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FD45776-7880-14A0-77A8-DA3E015645D6" referredColumn="FA9C0106-F841-6F64-8A2E-F5A8B58F8ACF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53039D28-761F-44C0-A2AD-79327455BA87" name="F15.E4RFE_tasks_F15.E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>84325209-DEBC-F44A-3D70-ADAD3D83DBEC</generatorID>
+<ownerDesignName>logical_model_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7E08CD8-8FA1-EE41-F55F-8C2A547D93A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

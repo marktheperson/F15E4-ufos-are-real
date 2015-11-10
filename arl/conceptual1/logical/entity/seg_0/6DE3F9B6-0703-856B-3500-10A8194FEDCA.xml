@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DE3F9B6-0703-856B-3500-10A8194FEDCA" name="F15.E5comment">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 21:32:02 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="25E528FF-56C0-B075-6732-02D07BCAB96D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 21:32:24 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFE_ID" id="10FDEC73-F998-D505-1F43-19FFB4F9C866">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 21:33:04 UTC</createdTime>
+<generatorID>E0CF0821-1F95-8FDA-B10A-F23C2A373A83</generatorID>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DDEB76DB-E2FA-64FB-DB31-1CE27D7AC4F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BCE1610-4FD5-7D3A-9BE4-DAB846FED8FE" name="F15.E5comment PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 21:32:47 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25E528FF-56C0-B075-6732-02D07BCAB96D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

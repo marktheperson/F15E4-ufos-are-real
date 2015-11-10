@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83931A70-1D2D-6F2F-CF85-B661C6B91270" name="F15.E4comment">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 19:30:40 UTC</createdTime>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="96C4291B-0EE9-0243-20F0-1EEA7E7FF82F">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 19:30:48 UTC</createdTime>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="A8D36535-85B8-E172-7D99-D849911E21FD">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 19:31:06 UTC</createdTime>
+<generatorID>66363FCB-B535-5DC6-1F6B-0161B60A1E1D</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>28D6D09A-AE44-D0EC-11FF-DA148AD7699F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment_entry_date" id="9DDEEF57-19FC-37D3-DA39-69EBA6856615">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:21:41 UTC</createdTime>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="784DACAF-FC5F-7328-A47C-0CBEC9EC778F">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:21:53 UTC</createdTime>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="C3A6590C-D7A4-B822-E3C8-00121D1B167A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 21:23:49 UTC</createdTime>
+<generatorID>D51FBE82-8FCD-AC54-4F2E-DDA22A467C63</generatorID>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E1D7D570-617E-B678-8C5B-09C034F24A9E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DD0E9FF7-015F-FF1C-A5FE-B1DF5D4342B8" name="F15.E4comment PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 19:30:54 UTC</createdTime>
+<ownerDesignName>logical_model_3</ownerDesignName>
+<engineerTo>
+<item key="39412DA8-E3D0-75AF-4BD6-572D36310139" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96C4291B-0EE9-0243-20F0-1EEA7E7FF82F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

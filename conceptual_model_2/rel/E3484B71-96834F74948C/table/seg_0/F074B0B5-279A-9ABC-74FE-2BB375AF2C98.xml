@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F074B0B5-279A-9ABC-74FE-2BB375AF2C98" name="F15.E4stat_hist">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>7C0B7B6F-78D5-A92B-F37B-8FBB0B030F7F</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stat_hist_id" id="9BD31EF2-2F37-AD13-FF2D-1E443556BA94">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>5C50ECA3-84FA-393A-6587-F371BB45B33A</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.E4stat_stat_id" id="F3A24C09-CD6E-4099-5F62-053797245228">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>6259AA3C-B038-9CF5-CA01-B5530BF3157C</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="859838E0-7BFD-D1A6-25EF-B30CD825E0CC" referredColumn="1AE26EB3-3F30-FEB8-5E4E-8391DA9C5E17"/>
+</associations>
+</Column>
+<Column name="F15.E4RFE_rfe_id" id="FD10B60A-E1F3-1534-200E-B0C5D9C426AF">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>B5DD7A5E-AD3F-FB1A-161D-B43351CD85BD</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D941CCF-DF14-1F76-CB79-DC00A5B126E9" referredColumn="FA9C0106-F841-6F64-8A2E-F5A8B58F8ACF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB6E921E-D42B-CE30-B693-E38A98553511" name="F15.E4stat_hist_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>33E8E622-CC5F-3473-CC60-6B31159C9AD4</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BD31EF2-2F37-AD13-FF2D-1E443556BA94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2F1F773-B5E5-A0AC-AA52-FEDA8D1650FC" name="F15.E4stat_hist_F15.E4stat_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>F2975127-DC95-6002-FB67-4249B13C2E05</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3A24C09-CD6E-4099-5F62-053797245228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D6E82CA-1847-96A1-2CCF-CEF9BAA21800" name="F15.E4stat_hist_F15.E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-26 22:29:23 UTC</createdTime>
+<generatorID>0C1A5F43-DA62-040F-D9E9-A97851A6824B</generatorID>
+<ownerDesignName>conceptual_model_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD10B60A-E1F3-1534-200E-B0C5D9C426AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3680055E-10BC-B9A4-C493-3575E60F0749" name="F15.E5rfe_document">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 22:01:33 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_document_id" id="7AC34B9C-C88E-808E-0ECE-5973D95AD397">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 22:01:52 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFE_ID" id="692041CC-9311-0F26-193E-CF43740E525B">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 22:02:26 UTC</createdTime>
+<generatorID>EFEE70EE-957F-D88A-CC5F-A053CB64A9C9</generatorID>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DDEB76DB-E2FA-64FB-DB31-1CE27D7AC4F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="330D9D31-E156-CCD9-C4BE-17007DA35CF2" name="F15.E5rfe_document PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-10-19 22:02:06 UTC</createdTime>
+<ownerDesignName>conceptual1</ownerDesignName>
+<engineerTo>
+<item key="419FF07C-E508-E581-9CBB-3112C4B77996" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AC34B9C-C88E-808E-0ECE-5973D95AD397</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
