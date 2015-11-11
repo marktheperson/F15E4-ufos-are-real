@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AACC628-2EDB-4C3C-AE2C-726B69506337" name="F15A0_document">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>BF0DABE8-9665-95E8-9079-56DD8E6ACEF5</generatorID>
+<notes>create or replace &lt;br/&gt;TRIGGER  CREO_document&lt;br/&gt;   before insert or update on CREO_document&lt;br/&gt;   for each row&lt;br/&gt;begin&lt;br/&gt;   if :new.document_id is null then&lt;br/&gt;     select CREO_document_seq.nextval() into :new.document_id from dual;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting then&lt;br/&gt;       :new.created := localtimestamp;&lt;br/&gt;       :new.row_version_number := 1;&lt;br/&gt;   elsif updating then&lt;br/&gt;       :new.row_version_number := nvl(:old.row_version_number,1) + 1;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting or updating then&lt;br/&gt;       :new.updated := localtimestamp;&lt;br/&gt;   end if;&lt;br/&gt;end;</notes>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="document_id" id="3AD687F4-1A45-D00C-86D2-8BA168A836BB">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>A452D608-B1DE-C1AD-336E-931B6BC1F414</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="filename" id="81F7B174-1770-3FAC-F984-5641F99C50AA">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>423A3CF6-9D30-FB37-1E1F-0E658DFBA8DB</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="199901A8-61AB-7EA7-EC09-E7C33BE481E0">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>57242194-6B83-91D1-950B-F27BBBFBAB8D</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="A8FEC715-8A99-D8F2-9C3B-0C68EB66CE92">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>D2EC6BC1-0860-0A73-C3EE-8C2AED5215FA</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_blob" id="9FF38467-F611-91EB-3C22-20B5C230E8AF">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>D037C6B5-2642-2416-AB9F-ADC4ED6D4387</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="42FC8E9B-D7DD-5D9E-821C-F5C4B2E6C817">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>BD719854-6A07-1314-B978-1F98930E5B7E</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="5EE55542-DBD9-12E0-FDF0-35AC20CF8AE2">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>EABE34F5-2BED-5509-79E6-0C7624C19D6F</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB9322FF-E460-741D-FBF6-FCE8C4189CAE" name="CREO_document_PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:41:22 UTC</createdTime>
+<generatorID>E388ACAD-04E9-DC23-917B-3BDADEE82845</generatorID>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AD687F4-1A45-D00C-86D2-8BA168A836BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

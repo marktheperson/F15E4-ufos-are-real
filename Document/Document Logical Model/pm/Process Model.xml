@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="E75C6D9C-3E8E-3E7E-1D5C-99D3EAA33AD5">
+<createdBy>pcannata</createdBy>
+<createdTime>2015-11-07 17:44:03 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

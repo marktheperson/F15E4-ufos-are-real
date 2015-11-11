@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="F15A0_document">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-25 00:47:51 UTC</createdTime>
+<notes>create or replace &lt;br/&gt;TRIGGER  CREO_document&lt;br/&gt;   before insert or update on CREO_document&lt;br/&gt;   for each row&lt;br/&gt;begin&lt;br/&gt;   if :new.document_id is null then&lt;br/&gt;     select CREO_document_seq.nextval() into :new.document_id from dual;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting then&lt;br/&gt;       :new.created := localtimestamp;&lt;br/&gt;       :new.row_version_number := 1;&lt;br/&gt;   elsif updating then&lt;br/&gt;       :new.row_version_number := nvl(:old.row_version_number,1) + 1;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting or updating then&lt;br/&gt;       :new.updated := localtimestamp;&lt;br/&gt;   end if;&lt;br/&gt;end;</notes>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="A452D608-B1DE-C1AD-336E-931B6BC1F414">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-25 00:48:04 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="423A3CF6-9D30-FB37-1E1F-0E658DFBA8DB">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-07 15:59:05 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="57242194-6B83-91D1-950B-F27BBBFBAB8D">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-07 15:59:30 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="D2EC6BC1-0860-0A73-C3EE-8C2AED5215FA">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-07 15:59:56 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_blob" id="D037C6B5-2642-2416-AB9F-ADC4ED6D4387">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-07 16:00:18 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comments" id="BD719854-6A07-1314-B978-1F98930E5B7E">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-07 16:00:33 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="tags" id="EABE34F5-2BED-5509-79E6-0C7624C19D6F">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-14 00:38:53 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E388ACAD-04E9-DC23-917B-3BDADEE82845" name="CREO_document PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-25 00:48:19 UTC</createdTime>
+<ownerDesignName>Document Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AE56E8F-3274-459E-6969-426F47B7020D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A452D608-B1DE-C1AD-336E-931B6BC1F414</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

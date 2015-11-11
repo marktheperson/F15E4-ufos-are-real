@@ -1,0 +1,17 @@
+DROP SEQUENCE F15A0_document_seq ; 
+create sequence F15A0_document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15A0_document_PK_trig 
+; 
+
+create or replace trigger F15A0_document_PK_trig 
+before insert on F15A0_document
+for each row 
+begin 
+select F15A0_document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+
