@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C445412B-9E50-5357-1C7C-DC1D4129D910" name="F15E4Emp">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-11 00:03:12 UTC</createdTime>
+<generatorID>4898282E-AB1A-2482-5607-FDED01A76449</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<engineerTo>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp id" id="47FB5B85-4C19-9C20-E86F-DFD3B7E750ED">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-11 00:03:12 UTC</createdTime>
+<generatorID>FBA92E57-54A2-748E-7370-2F5BA2AC7BE2</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<engineerTo>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15E4Auth auth id" id="FCE57352-B6C2-51A2-DEE9-3E7497CEB714">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-11 00:03:12 UTC</createdTime>
+<generatorID>A28889DA-FE27-446C-A147-A6971CBED810</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<engineerTo>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C84353CA-31C2-97F2-C143-488148832A4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15E4Lab lab id" id="92A102A7-9242-32D0-7263-12471FE8ECD2">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-11 00:03:12 UTC</createdTime>
+<generatorID>7E70F6AD-A97E-69F7-2121-F4227841C8EE</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<engineerTo>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A3FDCC9B-BF13-1727-3335-8F61DA4A22D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5BE26242-7F29-D4DF-7831-37B0F70E28F6" name="F15E4Emp PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-11 00:03:12 UTC</createdTime>
+<generatorID>283FAA95-5C56-1FEF-ACE2-F3480338C0E0</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<engineerTo>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>47FB5B85-4C19-9C20-E86F-DFD3B7E750ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

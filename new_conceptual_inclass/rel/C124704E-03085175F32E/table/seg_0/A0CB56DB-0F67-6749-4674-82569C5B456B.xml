@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0CB56DB-0F67-6749-4674-82569C5B456B" name="F15E4Doc">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>64FD7BC5-0831-0870-CF1F-AEF8F1B16A85</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="766C7735-C7A8-EA17-F7A5-C9640B058F7D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>C95E16B6-FB74-2DDD-CDE4-17DF5C55B6E2</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4RFE_RFE_id" id="9AF82DF6-2BD5-B825-1DA1-8E26A401250A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>2D4B30E5-396D-DC4B-E274-E3062768FEF4</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="984AD84A-FB3C-3222-C0B4-FBC78538C564" referredColumn="2A7D618E-987E-57D0-41DF-F1901B72632C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FFAD0615-A223-F315-841B-130192F2A7B4" name="F15E4Doc_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>2E6D2413-0233-AD20-BFB6-048B78976D1D</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="766C7735-C7A8-EA17-F7A5-C9640B058F7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A2699FF-49B8-F1E8-9B6A-F38968886967" name="F15E4Doc_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>91A17C0D-5437-9031-E2B3-F28CD4703717</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AF82DF6-2BD5-B825-1DA1-8E26A401250A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83D78D7C-39A5-50D0-F49B-BF427616271E" name="F15E4Auth">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>10FC2435-98B2-EB4E-6A27-C277DD438BF9</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="auth_id" id="ECC10907-1231-AFF7-A85A-CC6C76D756C1">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>DD11C321-F3E6-31DC-3F1C-EA7E7A3E745A</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="right" id="7E0ECC6A-B4D5-9A5D-B773-4F34D8D791D7">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>1EF4D6E6-A7DB-02C8-EF56-1ABBB5A95172</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4Emp_emp_id" id="8CF29F84-D92B-E2CF-16BC-96B4FC7BEFF9">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>EEE5E1B8-2267-BB8E-AA00-E54CD2DFFD34</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7A478E5-DFD1-6049-90AF-6122F1828A58" referredColumn="FBA92E57-54A2-748E-7370-2F5BA2AC7BE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADC5D2E6-DFE6-73B7-B28B-49EB43A3B2C0" name="F15E4Auth_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>67481F99-5AEF-2F49-488B-BB8A7B1CD9F5</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECC10907-1231-AFF7-A85A-CC6C76D756C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ADD3CCD-9CC3-0904-6DC8-9996EA975C08" name="F15E4Auth__IDX">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4B66DA9E-0552-ACDD-2B66-E9D9E2BF8C93</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8CF29F84-D92B-E2CF-16BC-96B4FC7BEFF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44D2D052-11BD-B11D-65DB-CE5394F6916F" name="F15E4Auth_F15E4Emp_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-10 23:59:10 UTC</createdTime>
+<generatorID>4B66DA9E-0552-ACDD-2B66-E9D9E2BF8C93</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CF29F84-D92B-E2CF-16BC-96B4FC7BEFF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

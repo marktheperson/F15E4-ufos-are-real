@@ -4,7 +4,7 @@
 <createdTime>2015-11-02 22:22:08 UTC</createdTime>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,13 +14,15 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<subtypesRefType>None</subtypesRefType>
+<attributeInherType>All atributes</attributeInherType>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="RFE_id" id="945B6F6D-8708-816C-8800-D2822F2352EE">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-02 22:22:14 UTC</createdTime>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +35,7 @@
 <generatorID>570C86D4-49A6-02AD-2833-9B40B6A71562</generatorID>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>CAD1503A-0691-8009-B8F0-BEED48DF4934</referedAttribute>
@@ -48,7 +50,7 @@
 <generatorID>36193C3A-E7FB-5330-BFE0-39926B1B8392</generatorID>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>977892A4-E6C1-E54D-FDE8-F4702A1542CA</referedAttribute>
@@ -63,7 +65,7 @@
 <generatorID>366A34FC-13DE-3A2A-71D7-2275CDCD4A7A</generatorID>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>09B9F025-ED08-02A5-7FDC-4E1D64B24FCC</referedAttribute>
@@ -79,7 +81,7 @@
 <createdTime>2015-11-02 22:22:18 UTC</createdTime>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
 <engineerTo>
-<item key="2D8FF41D-AD9F-C26A-5711-E38279F43487" value="true"/>
+<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
