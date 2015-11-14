@@ -3,10 +3,6 @@
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-02 22:05:54 UTC</createdTime>
 <ownerDesignName>new_conceptual_inclass</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="C124704E-CE6D-D1AB-1EA8-03085175F32E" value="false"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,4 +12,15 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="exec_director_flag" id="0FCBEEF6-A719-B300-A6B5-A513A2F5C906">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-14 22:20:33 UTC</createdTime>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
 </Entity>

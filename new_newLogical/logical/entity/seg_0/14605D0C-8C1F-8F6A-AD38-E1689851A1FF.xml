@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14605D0C-8C1F-8F6A-AD38-E1689851A1FF" name="F15E4Lab">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-14 23:04:47 UTC</createdTime>
+<generatorID>B318F462-C059-CF5F-C268-C5BBA8C278F5</generatorID>
+<ownerDesignName>new_newLogical</ownerDesignName>
+<engineerTo>
+<item key="15D87EEC-D326-7A1D-BD32-74A2EDAD69BF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab id" id="586A524B-F7E4-37F4-5DFD-1EA3727C9BE4">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-14 23:04:47 UTC</createdTime>
+<generatorID>A27F68E9-79CE-0392-E6E1-68C8DAF09795</generatorID>
+<ownerDesignName>new_newLogical</ownerDesignName>
+<engineerTo>
+<item key="15D87EEC-D326-7A1D-BD32-74A2EDAD69BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="342DB097-67DA-13FE-058C-5C66D73CBE6C" name="F15E4Lab PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-14 23:04:47 UTC</createdTime>
+<generatorID>4B8570CC-02B3-875E-FB11-148F2FF8A4CF</generatorID>
+<ownerDesignName>new_newLogical</ownerDesignName>
+<engineerTo>
+<item key="15D87EEC-D326-7A1D-BD32-74A2EDAD69BF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>586A524B-F7E4-37F4-5DFD-1EA3727C9BE4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

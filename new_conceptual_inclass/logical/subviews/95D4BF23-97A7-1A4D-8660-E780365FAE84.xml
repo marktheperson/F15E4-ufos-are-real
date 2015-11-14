@@ -69,7 +69,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="892A5D4D-F4CD-B2E4-FF6B-CC3B1BEA10D5" otype="Note" vid="A61133C2-E79D-A084-15DD-226E1C14CB22">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="400" y="257" width="95" height="43"/>
+<bounds x="400" y="257" width="97" height="43"/>
 <comment>Approvers</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="8D46954E-9CF0-7920-33C7-1E9974BC76C7" otype="Note" vid="4FFFCD59-BE4B-0468-807C-5A33F89B7350">
