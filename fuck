@@ -5,6 +5,3 @@ AND r.F15E4stat_stat_id = s.stat_id
 AND s.F15E4stat_code_stat_code = sc.stat_code
 AND c.F15E4rfe_rfe_id = r.rfe_id
 order by r.rfe_id desc;
-
-
-1RequestorThe employee who create the RFE2FYI ReviewerAn employee with peripheral interests; will get automatically notified at certain stages3Sys Admin ApproverFirst round approver for new RFE's in their lab4Lab Director ApproverSecond round approver for new RFE's in their lab5Chairperson ApproverNetwork Security Panel approver6Exec Dir ApproverFinal round approver for all RFE's
