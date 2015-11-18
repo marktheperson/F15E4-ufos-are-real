@@ -85,10 +85,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="F15E4status stat id" id="4331A10B-8D8A-82F2-4499-FC1B0A91D999">
+<Attribute name="stat id" id="73F1208D-DD34-3F61-5964-F6594F3A9C23">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:04:47 UTC</createdTime>
-<generatorID>6EE6A259-EAD2-F987-0BE3-BB471085F87C</generatorID>
+<createdTime>2015-11-18 01:53:42 UTC</createdTime>
+<generatorID>8002A9BF-2D25-B3C4-CC87-A15164D43294</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <engineerTo>
 <item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>

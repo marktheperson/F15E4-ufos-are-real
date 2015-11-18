@@ -29,21 +29,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="F15E4RFE RFE id" id="7E288E36-BC0F-8663-BE5C-3EEC5E7AAA5B">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:04:47 UTC</createdTime>
-<generatorID>0A384480-0208-8647-A271-12C3FE28D0EC</generatorID>
-<ownerDesignName>new_logical</ownerDesignName>
-<engineerTo>
-<item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>F21967C8-E45A-0662-968D-14438AA59617</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A2ABBE04-156F-C1A6-E1E4-4363BAAA67B3" name="F15E4hist PK">
