@@ -112,9 +112,9 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="admin_flag" id="4C1DAEFA-C102-752F-F758-3D7D0F7FF679">
+<Attribute name="type" id="47BCD36F-AE31-9332-B8AA-A4E90DF3B228">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:12:30 UTC</createdTime>
+<createdTime>2015-11-19 02:54:50 UTC</createdTime>
 <ownerDesignName>new_logical</ownerDesignName>
 <engineerTo>
 <item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
@@ -122,51 +122,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="dir_flag" id="51BBD0BA-63C4-5C75-C459-B31B67EF161D">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:12:36 UTC</createdTime>
-<ownerDesignName>new_logical</ownerDesignName>
-<engineerTo>
-<item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="exec_dir_flag" id="092EBDC7-4DA9-F447-6CCC-2C5348CB72C1">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:12:41 UTC</createdTime>
-<ownerDesignName>new_logical</ownerDesignName>
-<engineerTo>
-<item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="chair_flag" id="B9EDC175-F4D3-5E9B-A9FE-F835EB0E2718">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:12:51 UTC</createdTime>
-<ownerDesignName>new_logical</ownerDesignName>
-<engineerTo>
-<item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="auth id" id="559294A0-C974-339F-3893-B18808ADB911">
 <createdBy>Mark1</createdBy>
