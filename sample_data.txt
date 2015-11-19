@@ -16,10 +16,10 @@ INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS
 INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (4, 'Gale', 'gale@yahoo.com', 'A100', '212-0157', 'A', '11-04-2002', 'Chairperson');
 INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (5, 'Jacob', 'jacob@yahoo.com', 'C2100', '512-4678', 'A', '11-10-2002', 'Exec Dir');
 
-INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (6, 'Abby', 'abby@yahoo.com', 'A100', '251-4687', 'I', '22-OCT-2005', 'Lab Director');
-INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (7, 'Julia', 'julia@gmail.com', 'B100', '545-4557', 'I', '14-FEB-2005', 'Lab Director');
-INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (8, 'Dominic', 'dominic@yahoo.com', 'C100', '452-5411', 'I', '10-DEC-2007', 'Lab Director');
-INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (9, 'Paul', 'paul@yahoo.com', 'B200', '124-5527', 'I', '08-JUN-2006', 'Lab Director');
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (6, 'Abby', 'abby@yahoo.com', 'A100', '251-4687', 'I', '02-10-2005', 'Lab Director');
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (7, 'Julia', 'julia@gmail.com', 'B100', '545-4557', 'I', '04-10-2005', 'Lab Director');
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (8, 'Dominic', 'dominic@yahoo.com', 'C100', '452-5411', 'I', '10-12-2007', 'Lab Director');
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer) VALUES (9, 'Paul', 'paul@yahoo.com', 'B200', '124-5527', 'I', '08-06-2006', 'Lab Director');
 
 INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (1, 'Entered', 'The RFE has been created but has not yet been submitted for approval.');
 INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (2, 'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval');
