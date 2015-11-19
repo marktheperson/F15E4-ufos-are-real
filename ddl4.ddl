@@ -2,14 +2,13 @@ drop view F15E4chair_view;
 drop view F15E4exec_dir_view;
 drop view F15E4lab_director_view;
 drop view F15E4Sys_Admin_view;
-
-
 drop view F15E4emp_view;
+
 create view F15E4emp_view as
 SELECT
 	emp_id,
 	emp_name,
-	lab_id,
+	f15E4lab_lab_id,
 	email,
 	office,
 	phone,
@@ -30,11 +29,8 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		status_date,
-		admin_flag,
-		dir_flag,
-		exec_dir_flag,
-		chair_flag)
+		type,
+		status_date)
 		 VALUES (
 			:NEW.emp_id,
 			:NEW.emp_name,
@@ -43,11 +39,8 @@ BEGIN
 			:NEW.office,
 			:NEW.phone,
 			:NEW.emp_status,
-			:NEW.status_date,
-			:NEW.admin_flag,
-			:NEW.dir_flag,
-			:NEW.exec_dir_flag,
-			:NEW.chair_flag);
+			'Employee',
+			:NEW.status_date);
 END;
 /
 
@@ -61,12 +54,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-	status_date,
-	admin_flag,
-	dir_flag,
-	exec_dir_flag,
-	chair_flag
-FROM F15E4emp where chair_flag = 1 ;
+    	type,
+	status_date
+FROM F15E4emp where type = 'Chair' ;
 
 
 create or replace TRIGGER F15E4chair_trigger
@@ -81,11 +71,8 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		status_date,
-		admin_flag,
-		dir_flag,
-		exec_dir_flag,
-		chair_flag)
+		type,
+		status_date)
 		 VALUES (
 			:NEW.emp_id,
 			:NEW.emp_name,
@@ -94,11 +81,8 @@ BEGIN
 			:NEW.office,
 			:NEW.phone,
 			:NEW.emp_status,
-			:NEW.status_date,
-			0,
-			0,
-			0,
-			1);
+			'Chair',
+			:NEW.status_date);
 END;
 /
 
@@ -112,12 +96,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-	status_date,
-	admin_flag,
-	dir_flag,
-	exec_dir_flag,
-	chair_flag
-FROM F15E4emp where exec_dir_flag = 1 ;
+    	type,
+	status_date
+FROM F15E4emp where type = 'Executive Director' ;
 
 create or replace TRIGGER F15E4exec_dir_trigger
 	INSTEAD OF insert ON F15E4exec_dir_view
@@ -131,11 +112,8 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		status_date,
-		admin_flag,
-		dir_flag,
-		exec_dir_flag,
-		chair_flag)
+		type,
+		status_date)
 		 VALUES (
 			:NEW.emp_id,
 			:NEW.emp_name,
@@ -144,11 +122,8 @@ BEGIN
 			:NEW.office,
 			:NEW.phone,
 			:NEW.emp_status,
-			:NEW.status_date,
-			0,
-			0,
-			1,
-			0);
+			'Executive Director',
+			:NEW.status_date);
 END;
 /
 
@@ -162,12 +137,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-	status_date,
-	admin_flag,
-	dir_flag,
-	exec_dir_flag,
-	chair_flag
-FROM F15E4emp where dir_flag = 1 ;
+    	type,
+	status_date
+FROM F15E4emp where type = 'Lab Director' ;
 
 create or replace TRIGGER F15E4lab_director_trigger
 	INSTEAD OF insert ON F15E4lab_director_view
@@ -181,11 +153,8 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		status_date,
-		admin_flag,
-		dir_flag,
-		exec_dir_flag,
-		chair_flag)
+		type,
+		status_date)
 		 VALUES (
 			:NEW.emp_id,
 			:NEW.emp_name,
@@ -194,11 +163,8 @@ BEGIN
 			:NEW.office,
 			:NEW.phone,
 			:NEW.emp_status,
-			:NEW.status_date,
-			0,
-			1,
-			0,
-			0);
+			'Lab Director',
+			:NEW.status_date);
 END;
 /
 
@@ -212,12 +178,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-	status_date,
-	admin_flag,
-	dir_flag,
-	exec_dir_flag,
-	chair_flag
-FROM F15E4emp where admin_flag = 1 ;
+    	type,
+	status_date
+FROM F15E4emp where type = 'System Admin' ;
 
 create or replace TRIGGER F15E4sys_admin_trigger
 	INSTEAD OF insert ON F15E4Sys_Admin_view
@@ -231,11 +194,8 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		status_date,
-		admin_flag,
-		dir_flag,
-		exec_dir_flag,
-		chair_flag)
+		type,
+		status_date)
 		 VALUES (
 			:NEW.emp_id,
 			:NEW.emp_name,
@@ -244,11 +204,8 @@ BEGIN
 			:NEW.office,
 			:NEW.phone,
 			:NEW.emp_status,
-			:NEW.status_date,
-			1,
-			0,
-			0,
-			0);
+			'System Admin',
+			:NEW.status_date);
 END;
 /
 
@@ -260,10 +217,10 @@ declare
 statval NUMBER;
 begin
 statval := f15e4status_seq.nextval;
-insert into f15e4status (stat_id, code_id) values
-(statval, 100);
-if (:new.stat_id is null) then
-:new.stat_id := statval;
+insert into f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID) values
+(statval, 100, :new.RFE_ID);
+if (:new.F15E4STATUS_stat_id is null) then
+:new.F15E4STATUS_stat_id := statval;
 end if;
 end;
 /
