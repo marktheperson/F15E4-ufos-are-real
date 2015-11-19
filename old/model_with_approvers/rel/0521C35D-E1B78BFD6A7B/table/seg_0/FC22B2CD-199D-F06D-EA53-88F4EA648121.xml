@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC22B2CD-199D-F06D-EA53-88F4EA648121" name="F15E4comm">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>CAA05976-A1D2-B66C-5AD2-9B5592AD5CE0</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comm_id" id="7F8FFAD2-737E-69DF-AC50-E7197EEF527B">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>63CCF417-592B-11A4-557D-A3DC8527E2CA</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4RFE_RFE_id" id="BDF6AD06-27A3-1F93-55F2-39EFB07AA1B1">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>1B831885-86CC-BA10-0D2E-836C9631FB2C</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63149AC6-42A2-006A-57DC-E8068AE464BE" referredColumn="34382073-1A42-8145-714C-ADCD5DB12BDC"/>
+</associations>
+</Column>
+<Column name="F15E4Emp_emp_id" id="7335C7B1-D7E7-D198-3284-C3E6BF92AB41">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>35AC174B-47B9-86AC-B6F4-57B950D2D2FA</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34136ED6-A32E-FB02-976B-E0911FB461A3" referredColumn="2BED55CE-F1A2-60B5-5779-1D38AC447F25"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D50CFA78-F32C-19DB-8A71-5F87490240DE" name="F15E4comm_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>6EC91249-776B-1E23-9AD0-7B97FCF0F650</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F8FFAD2-737E-69DF-AC50-E7197EEF527B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9BE24EB-0886-AB5B-65AC-E8C6BE7905EF" name="F15E4comm_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>266B93CE-4005-983A-9F1B-74B287114A82</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDF6AD06-27A3-1F93-55F2-39EFB07AA1B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="142EF34D-5193-F00F-BA12-933885E60E74" name="F15E4comm_F15E4Emp_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:20:35 UTC</createdTime>
+<generatorID>9E0602EB-8EDD-A594-3722-00A9D30C1636</generatorID>
+<ownerDesignName>model_with_approvers</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7335C7B1-D7E7-D198-3284-C3E6BF92AB41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
