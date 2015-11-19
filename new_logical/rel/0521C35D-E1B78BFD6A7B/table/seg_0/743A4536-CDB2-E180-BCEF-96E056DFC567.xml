@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="743A4536-CDB2-E180-BCEF-96E056DFC567" name="F15E4Lab">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>14605D0C-8C1F-8F6A-AD38-E1689851A1FF</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="3886C7CE-6CDC-4B7A-E3DF-91BE52FA2212">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>586A524B-F7E4-37F4-5DFD-1EA3727C9BE4</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1C81AE2-6741-C0AF-BB25-889074C261A0" name="F15E4Lab_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>342DB097-67DA-13FE-058C-5C66D73CBE6C</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3886C7CE-6CDC-4B7A-E3DF-91BE52FA2212"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

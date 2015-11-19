@@ -29,10 +29,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="F15E4RFE RFE id" id="D6EB0F03-A45E-94FD-BD15-CB5C5E1E1CFD">
+<Attribute name="RFE id" id="1B831885-86CC-BA10-0D2E-836C9631FB2C">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:04:47 UTC</createdTime>
-<generatorID>4BDA77B7-D28D-9191-910B-1BEBF712F57B</generatorID>
+<createdTime>2015-11-19 02:07:35 UTC</createdTime>
+<generatorID>266B93CE-4005-983A-9F1B-74B287114A82</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <engineerTo>
 <item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
@@ -44,10 +44,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="F15E4Emp emp id" id="74049ADE-3176-AA02-1D38-F2399743430A">
+<Attribute name="emp id" id="35AC174B-47B9-86AC-B6F4-57B950D2D2FA">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-14 23:04:47 UTC</createdTime>
-<generatorID>D4DD4589-4C26-C8F6-A605-77D254477E44</generatorID>
+<createdTime>2015-11-19 02:08:06 UTC</createdTime>
+<generatorID>9E0602EB-8EDD-A594-3722-00A9D30C1636</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <engineerTo>
 <item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>

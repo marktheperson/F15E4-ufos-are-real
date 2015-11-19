@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABF016B6-66E5-EE7D-1764-3A7D22B91168" name="F15E4Approvers">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>07DEBB92-614C-19D3-6A91-F168D061A6D8</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15E4RFE_RFE_id" id="3429468C-835D-AF0E-D8A8-44B5596B52E8">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>494E427F-9B8C-7600-9D20-74CBF8989C68</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13B0EB89-4431-1C83-D5B0-09F1B8DCC83C" referredColumn="127862ED-7A31-A73B-873E-AFB469DC2413"/>
+</associations>
+</Column>
+<Column name="F15E4Emp_emp_id" id="AA7FDC2D-E42D-3A72-8B4E-43F2917F6724">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>81D01CE4-9080-A755-9091-BC4E47E6B4A5</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5E20F30-E0D7-4A2D-3DF3-CA19478F19BF" referredColumn="888B3996-A5FA-0F26-A4C2-184719D9428D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAD72766-81DF-0589-2F93-15B7748FFD0C" name="F15E4Approvers_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>07D01684-F446-2FC4-3631-F5996CEF117A</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3429468C-835D-AF0E-D8A8-44B5596B52E8"/>
+<colUsage columnID="AA7FDC2D-E42D-3A72-8B4E-43F2917F6724"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07CEC6C4-F661-A673-3578-6B9C20920A75" name="F15E4Approvers_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>2CE7AA58-8142-9013-A219-200E2424E080</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3429468C-835D-AF0E-D8A8-44B5596B52E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3F9444E-D072-29CB-6201-82D59D434EF7" name="F15E4Approvers_F15E4Emp_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-19 02:01:01 UTC</createdTime>
+<generatorID>2F497433-D25D-1CCB-28A3-FE49D0B9D0AB</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA7FDC2D-E42D-3A72-8B4E-43F2917F6724"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

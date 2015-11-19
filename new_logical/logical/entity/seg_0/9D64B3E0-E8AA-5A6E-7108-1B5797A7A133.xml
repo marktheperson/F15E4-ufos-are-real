@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D64B3E0-E8AA-5A6E-7108-1B5797A7A133" name="role_code">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D64B3E0-E8AA-5A6E-7108-1B5797A7A133" name="F15E4role_code">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-14 23:21:00 UTC</createdTime>
 <ownerDesignName>new_logical</ownerDesignName>
