@@ -1,0 +1,29 @@
+TODO:
+
+Login page w/ 2 lists and button to go to rfes
+
+my rfes page:
+	report, create new/update/duplicate rfe
+	on edit page:
+		add comments
+		add task ??
+		add contact/fyi
+		report that shows ^
+		button to page to add documents
+		report to show stat history
+	enter/recall buttons/status??
+	see any RFE that has been final approved/rejected if contact
+
+admins:
+	sys admin:
+		approve page
+			returns to requestor or approves to lab_dir
+		change status to SA approved
+		reject/approve buttons
+	repeat for lab_dir,chair,exec_dir
+	add emp
+		all emp types from views
+
+triggers:
+views:
+	stat_hist - on every RFE detail page
