@@ -217,6 +217,7 @@ ALTER TABLE F15E4tasks ADD CONSTRAINT F15E4tasks_F15E4RFE_FK FOREIGN KEY ( F15E4
 -- ERRORS                                   0
 -- WARNINGS                                 0
 
+
 DROP SEQUENCE F15E4Auth_seq ; 
 create sequence F15E4Auth_seq 
 start with 100 
@@ -413,7 +414,6 @@ DROP INDEX F15E4stat_code_code_id_FK_11 ;
 CREATE INDEX F15E4stat_code_code_id_FK_11 ON F15E4status(F15E4stat_code_code_id) ;
 DROP INDEX F15E4RFE_RFE_id_FK_12 ;
 CREATE INDEX F15E4RFE_RFE_id_FK_12 ON F15E4tasks(F15E4RFE_RFE_id) ;
-
 
 DROP SEQUENCE F15E4Auth_seq ; 
 create sequence F15E4Auth_seq 
@@ -841,3 +841,4 @@ DROP INDEX F15E4stat_code_code_id_FK_11 ;
 CREATE INDEX F15E4stat_code_code_id_FK_11 ON F15E4status(F15E4stat_code_code_id) ;
 DROP INDEX F15E4RFE_RFE_id_FK_12 ;
 CREATE INDEX F15E4RFE_RFE_id_FK_12 ON F15E4tasks(F15E4RFE_RFE_id) ;
+
