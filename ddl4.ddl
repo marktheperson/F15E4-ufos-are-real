@@ -13,7 +13,7 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	type,
+    	typer,
 	status_date
 FROM F15E4emp;
 
@@ -29,7 +29,7 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		type,
+		typer,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -54,9 +54,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	type,
+    	typer,
 	status_date
-FROM F15E4emp where type = 'Chair' ;
+FROM F15E4emp where typer = 'Chair' ;
 
 
 create or replace TRIGGER F15E4chair_trigger
@@ -71,7 +71,7 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		type,
+		typer,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -96,9 +96,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	type,
+    	typer,
 	status_date
-FROM F15E4emp where type = 'Executive Director' ;
+FROM F15E4emp where typer = 'Executive Director' ;
 
 create or replace TRIGGER F15E4exec_dir_trigger
 	INSTEAD OF insert ON F15E4exec_dir_view
@@ -112,7 +112,7 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		type,
+		typer,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -137,9 +137,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	type,
+    	typer,
 	status_date
-FROM F15E4emp where type = 'Lab Director' ;
+FROM F15E4emp where typer = 'Lab Director' ;
 
 create or replace TRIGGER F15E4lab_director_trigger
 	INSTEAD OF insert ON F15E4lab_director_view
@@ -153,7 +153,7 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		type,
+		typer,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -178,9 +178,9 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	type,
+    	typer,
 	status_date
-FROM F15E4emp where type = 'System Admin' ;
+FROM F15E4emp where typer = 'System Admin' ;
 
 create or replace TRIGGER F15E4sys_admin_trigger
 	INSTEAD OF insert ON F15E4Sys_Admin_view
@@ -194,7 +194,7 @@ BEGIN
 		office,
 		phone,
 		emp_status,
-		type,
+		typer,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -224,4 +224,3 @@ if (:new.F15E4STATUS_stat_id is null) then
 end if;
 end;
 /
-
