@@ -41,7 +41,7 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="desc" id="867037EB-677D-1C16-5C72-D64D9C58FF3E">
+<Attribute name="descr" id="867037EB-677D-1C16-5C72-D64D9C58FF3E">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-14 23:21:30 UTC</createdTime>
 <ownerDesignName>new_logical</ownerDesignName>

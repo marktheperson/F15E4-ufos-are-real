@@ -41,7 +41,7 @@
 <dataTypeSize>40</dataTypeSize>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="desc" id="1251E32D-DB94-FA16-EDBB-4724668EAE92">
+<Attribute name="descr" id="1251E32D-DB94-FA16-EDBB-4724668EAE92">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-14 23:18:50 UTC</createdTime>
 <ownerDesignName>new_logical</ownerDesignName>

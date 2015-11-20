@@ -112,7 +112,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="type" id="47BCD36F-AE31-9332-B8AA-A4E90DF3B228">
+<Attribute name="typer" id="47BCD36F-AE31-9332-B8AA-A4E90DF3B228">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-19 02:54:50 UTC</createdTime>
 <ownerDesignName>new_logical</ownerDesignName>
