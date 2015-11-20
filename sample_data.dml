@@ -1,0 +1,68 @@
+truncate table F15E4tasks;
+truncate table F15E4doc;
+truncate table F15E4status;
+truncate table F15E4cont;
+truncate table F15E4comm;
+delete F15E4RFE;
+delete F15E4EMP;
+delete F15E4LAB;
+delete F15E4AUTH;
+delete F15E4STAT_CODE;
+delete F15E4ROLE_CODE;
+
+alter trigger F15E4LAB_PK_TRIG disable;
+alter trigger F15E4AUTH_PK_TRIG disable;
+alter trigger F15E4EMP_PK_TRIG disable;
+alter trigger F15E4STAT_CODE_PK_TRIG disable;
+alter trigger F15E4ROLE_CODE_PK_TRIG disable;
+alter trigger F15E4RFE_PK_TRIG disable;
+
+INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (5, 'ITSS');
+INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (2, 'SISL');
+INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (3, 'ESL');
+INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (4, 'ATL');
+INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (1, 'SGL');
+
+INSERT INTO F15E4AUTH (AUTH_ID, RIGHT) VALUES (1, 'NONE');
+INSERT INTO F15E4AUTH (AUTH_ID, RIGHT) VALUES (2, 'READ');
+INSERT INTO F15E4AUTH (AUTH_ID, RIGHT) VALUES (3, 'WRITE');
+
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (1, 'Entered', 'The RFE has been created but has not yet been submitted for approval.');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (2, 'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (3, 'Returned', 'The RFE has been returned for further information or clarification. Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (4, 'Recalled', 'The requestor has recalled an RFE that has not yet reached final approval. Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (5, 'Rejected', 'The RFE has been rejected and cannot be implemented.');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (6, 'SA Approved', 'The Lab System Administrator has approved the RFE; it has been submitted for Lab Director approval');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (7, 'LD Approval', 'The Lab Director has approved the RFE; it has been submitted for Network Security Panel approval.');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (8, 'CH Approval', 'The Lab Director has approved the RFE; it has been submitted to the Chairperson of Security Panel approval');
+INSERT INTO F15E4STAT_CODE (CODE_ID, STATUS, descr) VALUES (9, 'Final Approved', 'The Executive Directors Office has given final approval for the RFE and it may be implemented');
+
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (1, 'Requestor', 'The employee who create the RFE');
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (2, 'FYI Reviewer', 'An employee with peripheral interests; will get automatically notified at certain stages');
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (3, 'Sys Admin Approver', 'First round approver for new RFEs in their lab');
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (4, 'Lab Director Approver', 'Second round approver for new RFEs in their lab');
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (5, 'Chairperson Approver', 'Network Security Panel approver');
+INSERT INTO F15E4ROLE_CODE (ROLE_ID, ROLE, descr) VALUES (6, 'Exec Dir Approver', 'Final round approver for all RFEs');
+
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (1, 'Chris', 'chris@gmail.com', 'A200', '213-5700', 'A', '11-06-2002', 'Sys Admin', 1, 1);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (2, 'Joe', 'joe@gmail.com', 'C300', '512-4687', 'I', '11-02-2102', 'Lab Director', 1, 5);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (3, 'John', 'john@gmail.com', 'B100', '215-6420', 'A', '11-03-2002', 'Employee', 1, 1);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (4, 'Gale', 'gale@yahoo.com', 'A100', '212-0157', 'A', '11-04-2002', 'Chairperson', 3, 5);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (5, 'Jacob', 'jacob@yahoo.com', 'C2100', '512-4678', 'A', '11-10-2002', 'Exec Dir', 3, 5);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (6, 'Abby', 'abby@yahoo.com', 'A100', '251-4687', 'A', '02-10-2005', 'Lab Director', 1, 2);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (7, 'Julia', 'julia@gmail.com', 'B100', '545-4557', 'A', '04-10-2005', 'Lab Director', 1, 3);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (8, 'Erika', 'erika@yahoo.com', 'C100', '452-5411', 'A', '10-12-2007', 'Lab Director', 1, 4);
+INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (9, 'Paul', 'paul@yahoo.com', 'B200', '124-5527', 'A', '08-06-2006', 'Lab Director', 1, 1);
+
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (1, 'The lab results are not in, we need an extension', 'The data can be used without another round of tests', 1);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (2, 'The lab monkey escaped from the lab', 'We have her son we can hold for ransom', 8);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (3, 'Someone spilled coffee on the lab computers. This destroyed our data.', 'We can start from the backup data.', 9);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (4, 'Our rocks were stolen', 'We have other rocks we can use', 7);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (5, 'We need a new printer because we ran out of ink', 'We have a 3D printer we can use. It is low on filament though.', 6);
+
+alter trigger F15E4LAB_PK_TRIG enable;
+alter trigger F15E4AUTH_PK_TRIG enable;
+alter trigger F15E4EMP_PK_TRIG enable;
+alter trigger F15E4STAT_CODE_PK_TRIG enable;
+alter trigger F15E4ROLE_CODE_PK_TRIG enable;
+alter trigger F15E4RFE_PK_TRIG enable;
