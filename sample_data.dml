@@ -3,6 +3,7 @@ truncate table F15E4doc;
 truncate table F15E4status;
 truncate table F15E4cont;
 truncate table F15E4comm;
+
 delete F15E4RFE;
 delete F15E4EMP;
 delete F15E4LAB;

@@ -5,3 +5,17 @@ AND r.F15E4stat_stat_id = s.stat_id
 AND s.F15E4stat_code_stat_code = sc.stat_code
 AND c.F15E4rfe_rfe_id = r.rfe_id
 order by r.rfe_id desc;
+
+
+
+create or replace trigger create_new_stat
+before insert or update on F15E4RFE
+for each row
+declare
+statval NUMBER;
+begin
+statval := f15e4status_seq.nextval;
+insert into f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID) values
+(statval, 100, :new.RFE_ID);
+end;
+/
