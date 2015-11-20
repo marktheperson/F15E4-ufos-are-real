@@ -70,21 +70,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="stat id" id="73F1208D-DD34-3F61-5964-F6594F3A9C23">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-18 01:53:42 UTC</createdTime>
-<generatorID>8002A9BF-2D25-B3C4-CC87-A15164D43294</generatorID>
-<ownerDesignName>new_logical</ownerDesignName>
-<engineerTo>
-<item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>E80BFBDB-8040-A264-9B75-343207D6895D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="emp id" id="A1287C56-7747-B4C2-DB84-BAE2E6FD50EC">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-19 02:02:41 UTC</createdTime>

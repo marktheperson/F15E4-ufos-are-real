@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77E9B126-E12B-A47E-5318-F1024DDB6D6B" name="F15E4tasksv1">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A694857C-8820-92EB-4799-38A425B306F2" name="F15E4tasksv2">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>E218A0DB-E19E-ECB6-B8B2-D3DBBCBED6F6</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="task_id" id="0A6FBCE6-1AE3-B596-FB1D-4CEA29D58ACB">
+<Column name="task_id" id="D591135B-D51E-8799-1823-1476272E1994">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>2ACDDCAC-5A3E-6CAF-B38F-CD11F2F35DDA</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="eff_date" id="B026C075-DEDA-0A85-B79A-F50B863BC7A6">
+<Column name="eff_date" id="565B97BC-653B-EBCC-D75E-1D68E73C7E44">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>A10BF37B-D2DB-1C75-71C5-3455E959C3F3</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="abbr" id="8C65CB88-31E5-E191-164A-D2635F7D8D9A">
+<Column name="abbr" id="D002B88E-FEDE-5B6B-3CEC-61F1A6616B11">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>A5383F33-B180-64D2-DB53-CB8EC85F3F2F</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="desc" id="ED82FFCD-DA92-0928-41C6-6E140D1FF8E3">
+<Column name="descr" id="084BDA71-6249-AA6A-D40A-228436811AA5">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>B392D6A1-7E6C-7D6A-B86D-E0CAAE997BD0</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -57,9 +57,9 @@
 <ownDataTypeParameters>4000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="F15E4RFE_RFE_id" id="2C51D32B-C1F6-BDD7-80BC-F89DB1029BAE">
+<Column name="F15E4RFEv2_RFE_id" id="CBAB0C16-591B-372B-1490-B2E17CBCE7E6">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>E1F2A889-9A2F-EE60-B814-AC56F7C1C50E</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -70,32 +70,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A66D139B-A981-0441-8D8A-A36C44229B3D" referredColumn="867FEDDA-FEC0-0A28-A5E0-3660D4C54D1B"/>
+<colAssociation fkAssociation="3E1356F6-4A4A-37B2-890C-6BCFB6344177" referredColumn="AB67007E-0B33-2067-6052-021339EBBA7B"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0E202361-CBD5-5117-DB84-7C7F0C707E55" name="F15E4tasks_PKv1">
+<ind_PK_UK id="1B838521-962F-73E4-4303-7F0DC95394BD" name="F15E4tasksv2_PK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>73BCFB3F-2EFB-988C-5B0A-44170A618268</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0A6FBCE6-1AE3-B596-FB1D-4CEA29D58ACB"/>
+<colUsage columnID="D591135B-D51E-8799-1823-1476272E1994"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A4F04919-F3CF-9BBD-9534-643669AB3E0C" name="F15E4tasks_F15E4RFE_FKv1">
+<ind_PK_UK id="281C7862-3DBE-0829-F53D-B60EB19F83FA" name="F15E4tasksv2_F15E4RFEv2_FK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>4961F00B-4E4E-A268-10C9-3E7C23B9F000</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2C51D32B-C1F6-BDD7-80BC-F89DB1029BAE"/>
+<colUsage columnID="CBAB0C16-591B-372B-1490-B2E17CBCE7E6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

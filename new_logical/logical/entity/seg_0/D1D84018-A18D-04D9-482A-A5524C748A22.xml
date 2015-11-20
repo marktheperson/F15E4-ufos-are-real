@@ -44,10 +44,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="RFE id" id="69953045-F310-AB83-E79D-22F1A38D3D5A">
+<Attribute name="RFE id" id="4A05FE32-AE1C-10BF-0332-88A6FC54144B">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-18 01:53:46 UTC</createdTime>
-<generatorID>8002A9BF-2D25-B3C4-CC87-A15164D43294</generatorID>
+<createdTime>2015-11-20 19:04:01 UTC</createdTime>
+<generatorID>8A396556-B79C-F1AD-CF10-ADD7AD9692B3</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <engineerTo>
 <item key="0521C35D-04D9-3A89-2E24-E1B78BFD6A7B" value="true"/>

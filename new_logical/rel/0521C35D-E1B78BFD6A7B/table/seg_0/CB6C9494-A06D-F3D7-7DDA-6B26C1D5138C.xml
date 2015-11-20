@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9ED325EF-D0C0-0525-E34F-D990FAF71307" name="F15E4role_codev1">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB6C9494-A06D-F3D7-7DDA-6B26C1D5138C" name="F15E4stat_code">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>9D64B3E0-E8AA-5A6E-7108-1B5797A7A133</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>10B02C4C-68E6-E10B-C42C-2B592B48C882</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="role_id" id="83AC7DFD-B55A-37E5-4754-47668CAF2522">
+<Column name="code_id" id="E8485E0C-DFDD-A465-9180-6D9AA20FCE7E">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>EA19E11A-BE31-24CF-3099-2E6D232EC582</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>C9265724-6CEF-C806-5141-7AEE8220AEF8</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,44 +19,44 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="role" id="4E2F9BEA-7659-413A-503C-5C12E7E957D2">
+<Column name="status" id="C16A4048-CAF8-10C3-75BE-D073ED198500">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>C0CB5822-93B3-0A4C-9B33-1535AEE47C7A</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>0F250782-9564-4DC3-887D-5AFCA6D2A68C</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="desc" id="632EFD17-8494-A24C-12EC-7938793AD412">
+<Column name="descr" id="578A0EE5-6901-2681-3580-B76E684C7872">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>867037EB-677D-1C16-5C72-D64D9C58FF3E</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>1251E32D-DB94-FA16-EDBB-4724668EAE92</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000</dataTypeSize>
-<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E9D5D4F3-C7FD-B43B-3E51-4C57C072E5AD" name="F15E4role_code_PKv1">
+<ind_PK_UK id="557D5535-C920-11D0-A804-67096C9D6A82" name="F15E4stat_code_PK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>4944210A-9822-9BD1-210B-8A3429E44DEB</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>DE3BB052-BA01-F8F8-039B-C8C49888B087</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="83AC7DFD-B55A-37E5-4754-47668CAF2522"/>
+<colUsage columnID="E8485E0C-DFDD-A465-9180-6D9AA20FCE7E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

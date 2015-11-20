@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21011FDC-619D-3443-D09A-E480058C0E1A" name="F15E4docv1">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E15CAD03-E82E-57C6-3799-3BB671589A24" name="F15E4docv2">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>DD98594D-491C-3A01-20CD-773A9DFB18DD</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="doc_id" id="B7D7993A-B8E7-02BB-0636-32320BAEAA26">
+<Column name="doc_id" id="A0966BBE-3CF7-1997-CD6D-A1BE71FC8CF7">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>24DF2966-9D50-19B0-3C15-2916F31B2540</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="filename" id="B0BC60E1-E67D-D5D4-7213-FF51B69F265C">
+<Column name="filename" id="41723BBA-74A9-096C-B9BF-E341E4108075">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>B9881AE6-7E5E-B5D8-B5C8-9C4B45E72BFA</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="file_mimetype" id="E639779F-7919-2FC4-E0F5-5AD5C468E78B">
+<Column name="file_mimetype" id="BB16BFEE-230D-1255-2313-0D133C9A91FF">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>7EF0E2B5-CF33-CAEE-F754-A9228436C012</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -45,9 +45,9 @@
 <ownDataTypeParameters>512,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="file_charset" id="FE21781F-A700-5551-8316-E3D684D27A0A">
+<Column name="file_charset" id="A2656B8B-1710-D348-281F-5CCA7073EA37">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>9C30BD1B-43C1-7B4F-974B-6190F5B86CD7</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -58,9 +58,9 @@
 <ownDataTypeParameters>512,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="file_blob" id="8EA9AF65-7FB1-BD87-22C2-BE624A1B26B1">
+<Column name="file_blob" id="2099C9F7-12BD-69EB-0276-782678C73446">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>67A54881-76A6-E3C2-89CE-8C01CCDA507B</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -70,9 +70,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="file_comments" id="F7A1D61E-A36E-EC3C-D4C7-9104DF16C826">
+<Column name="file_comments" id="843DF689-F6E0-7EB7-DC88-3CD50B67CB47">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>C4F766BA-34B1-0F33-D890-8D5B186A84C8</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -83,9 +83,9 @@
 <ownDataTypeParameters>4000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tags" id="4E22335D-284D-2822-F97D-C0A6ADDB0BAC">
+<Column name="tags" id="9454643A-2463-5370-ECA7-2120C5A2404F">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>F80DA022-EAD3-E605-B214-7E14249F1A21</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -96,9 +96,9 @@
 <ownDataTypeParameters>4000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="F15E4RFE_RFE_id" id="D8722902-F95A-D5B5-3EDA-8BA6A1CBBBDC">
+<Column name="F15E4RFEv2_RFE_id" id="E621B652-54F2-F2C1-4060-4DF60F58710F">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>51218F2B-1A0A-2F24-97E6-2024DB58A88A</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -109,32 +109,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="CCD55B72-D372-7662-543D-D4C3207C21A5" referredColumn="867FEDDA-FEC0-0A28-A5E0-3660D4C54D1B"/>
+<colAssociation fkAssociation="7529F0E0-8213-534F-475B-79B14EDBCD0B" referredColumn="AB67007E-0B33-2067-6052-021339EBBA7B"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D95717D8-C280-B9A1-483D-32029D46E448" name="F15E4doc_PKv1">
+<ind_PK_UK id="07E238A7-80F4-977C-23C6-2F53562DFAF1" name="F15E4docv2_PK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>5AE66753-9B34-2869-1513-EDDAF785E1A2</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B7D7993A-B8E7-02BB-0636-32320BAEAA26"/>
+<colUsage columnID="A0966BBE-3CF7-1997-CD6D-A1BE71FC8CF7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3870C6D9-2201-604A-F087-9341FC49F54A" name="F15E4doc_F15E4RFE_FKv1">
+<ind_PK_UK id="89B06753-518E-038E-7A33-CE942B89FD88" name="F15E4docv2_F15E4RFEv2_FK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:56:55 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>314F68C5-4682-AB7E-50B5-17C4103E89EE</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D8722902-F95A-D5B5-3EDA-8BA6A1CBBBDC"/>
+<colUsage columnID="E621B652-54F2-F2C1-4060-4DF60F58710F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

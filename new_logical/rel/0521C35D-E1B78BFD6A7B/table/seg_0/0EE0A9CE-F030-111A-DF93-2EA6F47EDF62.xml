@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="933BAC98-A4A5-F5EA-9482-67649DA2762A" name="F15E4Empv1">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EE0A9CE-F030-111A-DF93-2EA6F47EDF62" name="F15E4Empv2">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>0B6B2B72-D6C4-1CEE-CCA6-964B8C4A0451</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="emp_id" id="C497CA92-BDD3-73F0-D2B2-101E22838093">
+<Column name="emp_id" id="8429F2B7-FD58-7195-8F6C-CF5444FA5C61">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>7046F0D9-61F4-9FB4-6440-C90A3B30318C</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="emp_name" id="5436AEF7-6E2A-A562-13C3-8E6D4F965F4F">
+<Column name="emp_name" id="179E8C30-D83B-3200-5566-DFF5E3C80298">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>2A4B2B38-2E1C-B87E-2595-59A47CAF2377</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="68E74213-F42F-5412-C7E1-C006C2AAC3D6">
+<Column name="email" id="BDA90D61-E810-9AF0-85C2-22C97E471E0E">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>0EFED67E-6F80-B849-033C-BB305F1A77BC</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -45,9 +45,9 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="office" id="D283F6D0-9190-DB2F-F4B4-455647757AF1">
+<Column name="office" id="16E9B5ED-5E5E-2D8A-1376-7C75F3288CA9">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>BE20E79F-2201-149E-4030-0273EC842F9E</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -58,9 +58,9 @@
 <ownDataTypeParameters>12,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone" id="A1AEB65C-F167-66CA-9D11-3938BF6C2DE8">
+<Column name="phone" id="FDF28182-D6AF-57F2-5749-B49D3A63F7FD">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>4A0B278A-BC4C-36F0-2DD8-2DFAFB9CB494</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -71,9 +71,9 @@
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="emp_status" id="E13C06B2-D1A2-8506-3D37-4220D1F37EB1">
+<Column name="emp_status" id="97D9E3A7-C8B1-AE14-9001-C9C55322BF44">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>54763143-1694-FBBB-A8AE-05404852678B</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -84,9 +84,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="status_date" id="64FF8AD6-8919-F24C-9760-2BEC84712981">
+<Column name="status_date" id="49844016-F99D-9F23-2F87-0D0D8CE6ECAC">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>ADA8963B-6A5A-0016-80B0-AE23EF148A80</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -96,61 +96,22 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="admin_flag" id="9F508355-F842-B3D2-B26C-AB475D2EA416">
+<Column name="typer" id="03289496-59ED-008B-A33B-0CBC6A082A3A">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>4C1DAEFA-C102-752F-F758-3D7D0F7FF679</generatorID>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
+<generatorID>47BCD36F-AE31-9332-B8AA-A4E90DF3B228</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="dir_flag" id="F38FA376-EA2D-53BB-E280-D7A56EC8A434">
+<Column name="F15E4Authv2_auth_id" id="96DEEFE5-6973-B922-7886-7A244A7E7EE6">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>51BBD0BA-63C4-5C75-C459-B31B67EF161D</generatorID>
-<ownerDesignName>new_logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="exec_dir_flag" id="7A62B661-2365-A47A-7B8B-9557D297FDC6">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>092EBDC7-4DA9-F447-6CCC-2C5348CB72C1</generatorID>
-<ownerDesignName>new_logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="chair_flag" id="1E94B639-6C39-741B-53A3-E113DC647079">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
-<generatorID>B9EDC175-F4D3-5E9B-A9FE-F835EB0E2718</generatorID>
-<ownerDesignName>new_logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="F15E4Auth_auth_id" id="BA234340-61EE-9B77-E9B7-7A305E9E7325">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>559294A0-C974-339F-3893-B18808ADB911</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -161,12 +122,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3A3399B3-869E-D13D-3CF5-352D4A7CCF63" referredColumn="E82BFB86-F8B5-93C1-6252-E85479E5309A"/>
+<colAssociation fkAssociation="C983AF1E-7997-2777-82EA-06B4C41E4B13" referredColumn="4B41F0DA-DF58-C361-3B75-1FB257087A6B"/>
 </associations>
 </Column>
-<Column name="F15E4Lab_lab_id" id="D2605678-B94C-1230-B8EA-20EC644BB1F4">
+<Column name="F15E4Labv2_lab_id" id="3204BC86-735C-4BE0-4D63-3056218C7463">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>31C7089C-E479-7F79-5B8E-954C519C871F</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -177,43 +138,43 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C420CA9D-B689-EB2A-35C6-1FD0E5852951" referredColumn="D310A361-DD36-F2F7-86D4-148F1E4684EA"/>
+<colAssociation fkAssociation="F2CB8E76-BB23-9917-4FBE-62452B3FAF10" referredColumn="ADAD265C-F908-425A-1768-78231A19DE30"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7B5B6F7A-21EC-2ADD-BC2E-B90B2136CF29" name="F15E4Emp_PKv2">
+<ind_PK_UK id="C5FE6FE2-A7CA-E33F-59B7-53ADDA6E4A23" name="F15E4Empv2_PK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>5D0FD8A3-1B0E-BE21-8FF3-AC7DBBCCAEFF</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C497CA92-BDD3-73F0-D2B2-101E22838093"/>
+<colUsage columnID="8429F2B7-FD58-7195-8F6C-CF5444FA5C61"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E8C67D57-8B37-4C0E-DE13-F8366413279D" name="F15E4Emp_F15E4Auth_FKv2">
+<ind_PK_UK id="1ECC731D-63CE-E0DB-7F57-16BDA00C7F25" name="F15E4Empv2_F15E4Authv2_FK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:39 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>89D31A41-9610-4855-EB25-B62273F112C1</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BA234340-61EE-9B77-E9B7-7A305E9E7325"/>
+<colUsage columnID="96DEEFE5-6973-B922-7886-7A244A7E7EE6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="82BC9598-09C2-2EDF-CCFF-800AFB49BBB1" name="F15E4Emp_F15E4Lab_FKv2">
+<ind_PK_UK id="1D4631C2-2F03-A5A1-95C0-F22BD84E5468" name="F15E4Empv2_F15E4Labv2_FK">
 <createdBy>Mark1</createdBy>
-<createdTime>2015-11-19 02:36:40 UTC</createdTime>
+<createdTime>2015-11-20 19:04:26 UTC</createdTime>
 <generatorID>3E470CE3-6196-FB7D-757B-FC3F53367B83</generatorID>
 <ownerDesignName>new_logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D2605678-B94C-1230-B8EA-20EC644BB1F4"/>
+<colUsage columnID="3204BC86-735C-4BE0-4D63-3056218C7463"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
