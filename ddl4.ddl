@@ -219,8 +219,5 @@ begin
 statval := f15e4status_seq.nextval;
 insert into f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID) values
 (statval, 100, :new.RFE_ID);
-if (:new.F15E4STATUS_stat_id is null) then
-:new.F15E4STATUS_stat_id := statval;
-end if;
 end;
 /
