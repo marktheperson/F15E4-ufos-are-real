@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92DD96AD-4F3C-DB5A-93F1-52853D080F11" name="F15E4status">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>D1D84018-A18D-04D9-482A-A5524C748A22</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stat_id" id="92381049-30FD-3DD6-DD4F-7BE25FBC9D24">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>E80BFBDB-8040-A264-9B75-343207D6895D</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4stat_code_code_id" id="F9216C6F-C66E-0DCD-B2E5-40063630FBB4">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>C8FEFA4A-2FF0-EFDD-1B4C-E0C32329F8FC</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C822133-2E06-6124-43B6-479973007B4E" referredColumn="04BBAB97-937C-57CF-8A0E-A0EBA890B428"/>
+</associations>
+</Column>
+<Column name="F15E4RFE_RFE_id" id="305AEE45-E39D-3E82-25D2-13A1EB65C67F">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>4A05FE32-AE1C-10BF-0332-88A6FC54144B</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B39304BB-540F-9C15-7546-98C66AEB55B5" referredColumn="0186ECB9-7F5B-BE0C-53E3-602FA55CC81F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F6C7D3A-9C53-2D8E-DE66-5CF721AEBD7F" name="F15E4status_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>48760744-8EAE-3F7B-12A2-65F57C117550</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92381049-30FD-3DD6-DD4F-7BE25FBC9D24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2CF261C-16C6-082F-5D91-1C6B852B0C17" name="F15E4status_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>8A396556-B79C-F1AD-CF10-ADD7AD9692B3</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="305AEE45-E39D-3E82-25D2-13A1EB65C67F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C442C665-77A4-76EC-1998-1C519C6C689E" name="F15E4status_F15E4stat_code_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>187A315A-291B-DA16-7D4A-E2DC39BA8A6B</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9216C6F-C66E-0DCD-B2E5-40063630FBB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

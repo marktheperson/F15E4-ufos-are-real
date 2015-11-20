@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9ED8373A-EDCA-4CAB-9A50-ADEE44583934" name="F15E4comm">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>CAA05976-A1D2-B66C-5AD2-9B5592AD5CE0</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comm_id" id="C72552E8-9F5F-2B07-36E3-41CD526AB2BD">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>63CCF417-592B-11A4-557D-A3DC8527E2CA</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4RFE_RFE_id" id="D7B8CD4A-42A3-0DD5-4E6A-1958BE28545E">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>1B831885-86CC-BA10-0D2E-836C9631FB2C</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F809119-DAFF-BBC6-2163-9828F8933EB0" referredColumn="0186ECB9-7F5B-BE0C-53E3-602FA55CC81F"/>
+</associations>
+</Column>
+<Column name="F15E4Emp_emp_id" id="991F2E69-94EA-1D49-45BB-03CABE7CA232">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>35AC174B-47B9-86AC-B6F4-57B950D2D2FA</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18D1E513-D28C-81A8-9B6E-343543D78A2E" referredColumn="EAE1D0E7-548E-C5BA-03A4-892EE9845525"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23E8101B-27B3-C5E8-AEF5-8A72D463CCF5" name="F15E4comm_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>6EC91249-776B-1E23-9AD0-7B97FCF0F650</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C72552E8-9F5F-2B07-36E3-41CD526AB2BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D61DC681-E8DF-F08C-C028-7B03A42554FF" name="F15E4comm_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>266B93CE-4005-983A-9F1B-74B287114A82</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7B8CD4A-42A3-0DD5-4E6A-1958BE28545E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36244149-80C3-42FB-39F9-A5625B43E725" name="F15E4comm_F15E4Emp_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-20 19:10:23 UTC</createdTime>
+<generatorID>9E0602EB-8EDD-A594-3722-00A9D30C1636</generatorID>
+<ownerDesignName>new_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="991F2E69-94EA-1D49-45BB-03CABE7CA232"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
