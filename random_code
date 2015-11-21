@@ -19,3 +19,11 @@ insert into f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID) value
 (statval, 1, :new.RFE_ID);
 end;
 /
+
+create or replace procedure SUBMIT_RFE_PROC(RFE_ID in NUMBER)
+IS
+BEGIN
+statval := f15e4status_seq.nextval;
+INSERT INTO f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID)
+VALUES (statval, 2, RFE_ID);
+END SUBMIT_RFE_PROC;
