@@ -17,6 +17,7 @@ alter trigger F15E4EMP_PK_TRIG disable;
 alter trigger F15E4STAT_CODE_PK_TRIG disable;
 alter trigger F15E4ROLE_CODE_PK_TRIG disable;
 alter trigger F15E4RFE_PK_TRIG disable;
+alter trigger F15E4status_PK_TRIG disable;
 
 INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (5, 'ITSS');
 INSERT INTO F15E4LAB (LAB_ID, LAB_NAME) VALUES (2, 'SISL');
