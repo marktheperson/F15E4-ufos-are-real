@@ -31,6 +31,10 @@ select emp_name
 from F15E4emp
 where emp_id = v('P1_LABEMP');
 
+SELECT file_blob
+from F15E4DOC
+WHERE F15E4RFE_RFE_ID = :P23_RFE_ID;
+
 select emp_name
 from F15E4emp
 where f15e4lab_lab_id = v('P1_LAB')
