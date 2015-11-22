@@ -23,7 +23,76 @@ end;
 create or replace procedure SUBMIT_RFE_PROC(RFE_ID in NUMBER)
 IS
 BEGIN
-statval := f15e4status_seq.nextval;
 INSERT INTO f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID)
-VALUES (statval, 2, RFE_ID);
+VALUES (f15e4status_seq.nextval, 2, RFE_ID);
 END SUBMIT_RFE_PROC;
+
+select emp_name
+from F15E4emp
+where emp_id = v('P1_LABEMP');
+
+select emp_name
+from F15E4emp
+where f15e4lab_lab_id = v('P1_LAB')
+AND typer = 'Sys Admin';
+
+select LAB_NAME
+from F15E4LAB
+where lab_Id = v('P1_LAB');
+
+select c.status as "Status",
+       s.CREATED
+  from F15E4STATUS s, F15E4STAT_CODE c
+  where s.F15E4STAT_CODE_CODE_ID = c.code_id
+  AND S.F15E4RFE_RFE_ID = :P23_RFE_ID
+
+drop view RFE_view;
+create view RFE_view
+as
+select rfe_id, emp_id, lab_name, status, expl, alt_pro, review_date
+from f15e4rfe, f15e4emp, f15e4lab, f15e4status, f15e4stat_code
+where code_id = F15E4STAT_CODE_CODE_ID and  rfe_id = F15E4RFE_RFE_ID and F15E4EMP_EMP_ID = emp_id and F15E4LAB_LAB_ID = lab_id;
+
+CREATE OR REPLACE FORCE VIEW "RFE_VIEW" ("RFE_ID", "EMP_ID", "LAB_NAME", "STATUS", "EXPL", "ALT_PRO", "REVIEW_DATE") AS
+  select rfe_id, emp_id, lab_name, status, expl, alt_pro, review_date
+from f15e4rfe, f15e4emp, f15e4lab, f15e4status, f15e4stat_code
+where code_id = F15E4STAT_CODE_CODE_ID and  rfe_id = F15E4RFE_RFE_ID and F15E4EMP_EMP_ID = emp_id and F15E4LAB_LAB_ID = lab_id
+/
+
+create or replace trigger RFE_view_trigger
+instead of insert on RFE_view
+for each row
+declare
+s_id INTEGER;
+r_id INTEGER;
+emp_id INTEGER;
+begin
+    emp_id :=v('P1_LABEMP');
+    s_id:=f15e4status_seq.nextval;
+    r_id:=F15E4RFE_SEQ.nextval;
+    RFE_view_proc(r_id,s_id,:new.expl,:new.alt_pro,:new.review_date,emp_id);
+end;
+
+CREATE OR REPLACE PROCEDURE RFE_view_proc
+	(r_id in integer, s_id in integer, exp in varchar2, alt in varchar2, d in date, emp_id in integer)
+IS
+BEGIN
+insert into f15e4rfe (rfe_id,
+                                expl,
+                                alt_pro,
+                                review_date,
+                                F15E4EMP_EMP_ID)
+                                values
+                                    (r_id,
+                                    exp,
+                                    alt,
+                                    d,
+                                    emp_id);
+insert into f15e4status (stat_id,
+                                     F15E4STAT_CODE_CODE_ID,
+                                     F15E4RFE_RFE_ID)
+                                    values
+                                        (s_id,
+                                         100,
+                                         r_id);
+END RFE_view_proc;
