@@ -216,10 +216,8 @@ declare
 statval NUMBER;
 begin
 statval := f15e4status_seq.nextval;
-insert into f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID) values (statval, 1, :new.RFE_ID);
+insert into f15e4status (stat_id, f15e4stat_code_code_id, active, F15E4RFE_RFE_ID) values (statval, 1, 'y', :new.RFE_ID);
 end;
-
-
 
 create or replace trigger set_review_date
 before insert on F15E4RFE
