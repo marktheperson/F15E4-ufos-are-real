@@ -59,6 +59,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="details" id="7C7DD4AB-3820-4033-EB7E-03A9D1B41858">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 01:31:53 UTC</createdTime>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<engineerTo>
+<item key="D5368232-1CE0-5424-6A87-3A8DB79759BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5000</dataTypeSize>
+<ownDataTypeParameters>5000,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6EC91249-776B-1E23-9AD0-7B97FCF0F650" name="F15E4comm PK">

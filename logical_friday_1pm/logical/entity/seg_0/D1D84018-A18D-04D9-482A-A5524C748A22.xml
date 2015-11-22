@@ -44,6 +44,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="active" id="4F6AB5BE-EFC6-3ECD-1DCB-9E177B133370">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:31:39 UTC</createdTime>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<engineerTo>
+<item key="D5368232-1CE0-5424-6A87-3A8DB79759BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="RFE id" id="4A05FE32-AE1C-10BF-0332-88A6FC54144B">
 <createdBy>Mark1</createdBy>
 <createdTime>2015-11-20 19:04:01 UTC</createdTime>
