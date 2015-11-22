@@ -220,6 +220,26 @@ insert into f15e4status (stat_id, f15e4stat_code_code_id, active, F15E4RFE_RFE_I
 end;
 /
 
+create or replace trigger set_active_flag
+before insert on F15E4RFE
+for each row
+declare
+activeval VARCHAR2(1);
+begin
+activeval := 'y'
+:new.active := activeval;
+end;
+/
+
+create or replace trigger update_active_flags
+after insert F15E4STATUS
+where :new.f15e4stat_code_code_id != '1';
+for each row
+begin
+set_inactive_flags(:new.F15E4RFE_RFE_ID);
+end;
+/
+
 create or replace trigger set_review_date
 before insert on F15E4RFE
 for each row

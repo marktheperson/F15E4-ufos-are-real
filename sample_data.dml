@@ -69,9 +69,9 @@ INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (2, 'The la
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (3, 'Someone spilled coffee on the lab computers. This destroyed our data.', 'We can start from the backup data.', 3);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (4, 'Our rocks were stolen', 'We have other rocks we can use', 4);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (5, 'We need a new printer because we ran out of ink.', 'We have a 3D printer we can use. It is low on filament though.', 5);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (6, 'We need toilet paper because we fried the pig.', 'He\'s tasty bacon now.', 6);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (7, 'We need a new tv for the break room. Billy ate it.', 'We have another tv... but it\'s not as big.' 7);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (8, 'PLEASE MAKE THE SNOW STOP.', 'NONE, IT\'S TOO COLD.', 8);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (6, 'We need toilet paper because we fried the pig.', 'He is tasty bacon now.', 6);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (7, 'We need a new tv for the break room. Billy ate it.', 'We have another tv... but it is not as big.', 7);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (8, 'PLEASE MAKE THE SNOW STOP.', 'NONE, IT IS TOO COLD.', 8);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (9, 'Please order more paperclips.', 'We can use staples.', 9);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (10, 'I put poison in a Champagne bottle in the breakroom because Erika keeps drinking it...','None.', 10);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (11, 'Please fire John. He keeps eating my tuna.', 'Tuna is gross anyways.', 11);
@@ -79,8 +79,8 @@ INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (12, 'Seven
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (13, 'Neo has escaped from the matrix, we need to get him back.', 'Trinity is our double agent.', 13);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (14, 'B4', 'Hit', 14);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (15, 'My work report is on fire.', 'We called 911.', 15);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (16, 'My card is\'nt working.', 'IT ISN\'T WORKING.', 16);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (17, 'I heard Nicolas say to Josie that Paul heard that Erika and Julia were talking about Abby who heard that Aaron said to Gale that Brandy and Pearl were dating.', 'But that\'s none of my business.', 17);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (16, 'My card is not working.', 'IT IS NOT WORKING.', 16);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (17, 'I heard Nicolas say to Josie that Paul heard that Erika and Julia were talking about Abby who heard that Aaron said to Gale that Brandy and Pearl were dating.', 'But thats none of my business.', 17);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (18, 'The Champagne in the breakroom tastes funny.', 'None.', 8);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (19, 'We need more sticky notes. Our annual sticky note tower competition is coming up.', 'We can always use toothpicks for the towers.', 8);
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (20, 'The janitor smells funny.', 'He really needs to shower...', 8);
