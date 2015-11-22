@@ -1,10 +1,12 @@
 TODO:
 
-Login page w/ 2 lists 
-- button to go to rfes
+- Login page w/ 2 lists and button to go to rfes
 
 my rfes page:
+  trigger on update rfe to create new status entry
+	SUBMIT BUTTON
 	report, create new/update/duplicate rfe
+-	rfe_id, emp_id, lab_id, status_id(status), expl, alt_pro, approval review date
 	on edit page:
 		add comments
 		add task ??
@@ -13,7 +15,7 @@ my rfes page:
 		button to page to add documents
 		report to show stat history
 	enter/recall buttons/status??
-	see any RFE that has been final approved/rejected if contact
+-	see any RFE that has been final approved/rejected if contact
 
 admins:
 	sys admin:

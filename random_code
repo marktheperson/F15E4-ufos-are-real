@@ -51,16 +51,13 @@ select c.status as "Status",
   AND S.F15E4RFE_RFE_ID = :P23_RFE_ID
 
 drop view RFE_view;
-create view RFE_view
-as
-select rfe_id, emp_id, lab_name, status, expl, alt_pro, review_date
-from f15e4rfe, f15e4emp, f15e4lab, f15e4status, f15e4stat_code
-where code_id = F15E4STAT_CODE_CODE_ID and  rfe_id = F15E4RFE_RFE_ID and F15E4EMP_EMP_ID = emp_id and F15E4LAB_LAB_ID = lab_id;
-
-CREATE OR REPLACE FORCE VIEW "RFE_VIEW" ("RFE_ID", "EMP_ID", "LAB_NAME", "STATUS", "EXPL", "ALT_PRO", "REVIEW_DATE") AS
+CREATE OR REPLACE FORCE VIEW "RFE_VIEW" ("RFE_ID", "EMP_ID", "LAB_NAME", "STATUS", "EXPL", "ALT_PRO", "REVIEW_DATE") AS 
   select rfe_id, emp_id, lab_name, status, expl, alt_pro, review_date
 from f15e4rfe, f15e4emp, f15e4lab, f15e4status, f15e4stat_code
-where code_id = F15E4STAT_CODE_CODE_ID and  rfe_id = F15E4RFE_RFE_ID and F15E4EMP_EMP_ID = emp_id and F15E4LAB_LAB_ID = lab_id
+where code_id = F15E4STAT_CODE_CODE_ID
+and  rfe_id = F15E4RFE_RFE_ID
+and F15E4EMP_EMP_ID = emp_id
+and F15E4LAB_LAB_ID = lab_id
 /
 
 create or replace trigger RFE_view_trigger
@@ -100,3 +97,4 @@ insert into f15e4status (stat_id,
                                          100,
                                          r_id);
 END RFE_view_proc;
+

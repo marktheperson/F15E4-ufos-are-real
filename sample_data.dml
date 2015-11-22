@@ -65,10 +65,25 @@ INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS
 INSERT INTO F15E4EMP (EMP_ID, EMP_NAME, EMAIL, OFFICE, PHONE, EMP_STATUS, STATUS_DATE, typer, F15E4AUTH_AUTH_ID, F15E4LAB_LAB_ID) VALUES (17, 'Nicolas', 'nicolas@gmail.com', 'A100', '215-6820', 'A', '10-16-2014', 'Employee', 1, 5);
 
 INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (1, 'The lab results are not in, we need an extension', 'The data can be used without another round of tests', 1);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (2, 'The lab monkey escaped from the lab', 'We have her son we can hold for ransom', 8);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (3, 'Someone spilled coffee on the lab computers. This destroyed our data.', 'We can start from the backup data.', 9);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (4, 'Our rocks were stolen', 'We have other rocks we can use', 7);
-INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (5, 'We need a new printer because we ran out of ink', 'We have a 3D printer we can use. It is low on filament though.', 6);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (2, 'The lab monkey escaped from the lab', 'We have her son we can hold for ransom', 2);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (3, 'Someone spilled coffee on the lab computers. This destroyed our data.', 'We can start from the backup data.', 3);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (4, 'Our rocks were stolen', 'We have other rocks we can use', 4);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (5, 'We need a new printer because we ran out of ink.', 'We have a 3D printer we can use. It is low on filament though.', 5);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (6, 'We need toilet paper because we fried the pig.', 'He\'s tasty bacon now.', 6);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (7, 'We need a new tv for the break room. Billy ate it.', 'We have another tv... but it\'s not as big.' 7);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (8, 'PLEASE MAKE THE SNOW STOP.', 'NONE, IT\'S TOO COLD.' 8);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (9, 'Please order more paperclips.', 'We can use staples.', 9);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (10, 'I put poison in a Champagne bottle in the breakroom because Erika keeps drinking it...','None.', 10);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (11, 'Please fire John. He keeps eating my tuna.', 'Tuna is gross anyways.', 11);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (12, 'Seven', 'Blue', 12);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (13, 'Neo has escaped from the matrix, we need to get him back.', 'Trinity is our double agent.', 13);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (14, 'B4', 'Hit', 14);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (15, 'My work report is on fire.', 'We called 911.', 15);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (16, 'My card is\'nt working.', 'IT ISN\'T WORKING.', 16);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (17, 'I heard Nicolas say to Josie that Paul heard that Erika and Julia were talking about Abby who heard that Aaron said to Gale that Brandy and Pearl were dating.', 'But that\'s none of my business.', 17);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (18, 'The Champagne in the breakroom tastes funny.', 'None.', 8);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (19, 'We need more sticky notes. Our annual sticky note tower competition is coming up.', 'We can always use toothpicks for the towers.', 8);
+INSERT INTO F15E4RFE (RFE_ID, EXPL, ALT_PRO, F15E4EMP_EMP_ID) VALUES (20, 'The janitor smells funny.', 'He really needs to shower...', 8);
 
 alter trigger F15E4LAB_PK_TRIG enable;
 alter trigger F15E4AUTH_PK_TRIG enable;
