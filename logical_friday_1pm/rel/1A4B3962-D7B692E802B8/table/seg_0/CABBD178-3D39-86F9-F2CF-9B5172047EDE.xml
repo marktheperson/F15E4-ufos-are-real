@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CABBD178-3D39-86F9-F2CF-9B5172047EDE" name="F15E4stat_code">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:47:13 UTC</createdTime>
+<generatorID>10B02C4C-68E6-E10B-C42C-2B592B48C882</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code_id" id="19AA69E4-B437-DD88-0D72-9A79BA27EEB5">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:47:13 UTC</createdTime>
+<generatorID>C9265724-6CEF-C806-5141-7AEE8220AEF8</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="E78A60EA-80FD-B08C-7913-353FEBAEBEB1">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:47:13 UTC</createdTime>
+<generatorID>0F250782-9564-4DC3-887D-5AFCA6D2A68C</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descr" id="B4B3A074-F22B-34A6-2DD4-9A5C88AC4568">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:47:13 UTC</createdTime>
+<generatorID>1251E32D-DB94-FA16-EDBB-4724668EAE92</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C827AEFB-A586-5B6D-E7E1-9F53552CA2BF" name="F15E4stat_code_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-22 20:47:13 UTC</createdTime>
+<generatorID>DE3BB052-BA01-F8F8-039B-C8C49888B087</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19AA69E4-B437-DD88-0D72-9A79BA27EEB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
