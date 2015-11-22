@@ -51,7 +51,7 @@ select c.status as "Status",
   AND S.F15E4RFE_RFE_ID = :P23_RFE_ID
 
 drop view RFE_view;
-CREATE OR REPLACE FORCE VIEW "RFE_VIEW" ("RFE_ID", "EMP_ID", "LAB_NAME", "STATUS", "EXPL", "ALT_PRO", "REVIEW_DATE") AS 
+CREATE OR REPLACE FORCE VIEW "RFE_VIEW" ("RFE_ID", "EMP_ID", "LAB_NAME", "STATUS", "EXPL", "ALT_PRO", "REVIEW_DATE") AS
   select rfe_id, emp_id, lab_name, status, expl, alt_pro, review_date
 from f15e4rfe, f15e4emp, f15e4lab, f15e4status, f15e4stat_code
 where code_id = F15E4STAT_CODE_CODE_ID
@@ -59,6 +59,31 @@ and  rfe_id = F15E4RFE_RFE_ID
 and F15E4EMP_EMP_ID = emp_id
 and F15E4LAB_LAB_ID = lab_id
 /
+
+
+//making a new status
+DECLARE
+stat_pk number;
+BEGIN
+stat_pk := f15e4status_seq.nextval;
+return stat_pk;
+END;
+
+//setting the stat code automatically for a status update page
+DECLARE
+newval number;
+BEGIN
+newval := 2;
+return newval;
+END;
+
+/// code for the contacts report
+select e.emp_name,
+       r.role
+from F15E4cont c, F15E4emp e, F15E4ROLE_CODE r
+where c.F15E4RFE_rfe_id = :P23_RFE_ID
+and e.emp_id = c.F15E4EMP_EMP_ID
+and c.F15E4ROLE_CODE_ROLE_ID = R.role_ID
 
 create or replace trigger RFE_view_trigger
 instead of insert on RFE_view
@@ -97,4 +122,3 @@ insert into f15e4status (stat_id,
                                          100,
                                          r_id);
 END RFE_view_proc;
-

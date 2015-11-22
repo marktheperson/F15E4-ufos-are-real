@@ -13,7 +13,8 @@ SELECT
 	office,
 	phone,
 	emp_status,
-    	typer,
+  typer,
+	F15E4AUTH_AUTH_ID,
 	status_date
 FROM F15E4emp;
 
@@ -30,6 +31,7 @@ BEGIN
 		phone,
 		emp_status,
 		typer,
+		F15E4AUTH_AUTH_ID,
 		status_date)
 		 VALUES (
 			:NEW.emp_id,
@@ -40,7 +42,8 @@ BEGIN
 			:NEW.phone,
 			:NEW.emp_status,
 			'Employee',
-			:NEW.status_date);
+			1,
+			sysdate);
 END;
 /
 
@@ -210,7 +213,7 @@ END;
 /
 
 create or replace trigger create_new_stat
-after insert or update on F15E4RFE
+after insert on F15E4RFE
 for each row
 declare
 statval NUMBER;
@@ -221,20 +224,20 @@ end;
 /
 
 create or replace trigger set_active_flag
-before insert on F15E4RFE
+before insert on F15E4STATUS
 for each row
 declare
 activeval VARCHAR2(1);
 begin
-activeval := 'y'
+activeval := 'y';
 :new.active := activeval;
 end;
 /
 
 create or replace trigger update_active_flags
-after insert F15E4STATUS
-where :new.f15e4stat_code_code_id != '1';
+before insert on F15E4STATUS
 for each row
+when (NEW.f15e4stat_code_code_id != '1')
 begin
 set_inactive_flags(:new.F15E4RFE_RFE_ID);
 end;

@@ -1,0 +1,16 @@
+create or replace procedure set_inactive_flags(RFE_ID in NUMBER)
+IS
+BEGIN
+UPDATE F15E4STATUS
+SET active ='n'
+WHERE F15E4RFE_RFE_ID = RFE_ID;
+END set_inactive_flags;
+/
+
+create or replace procedure SUBMIT_RFE_PROC(RFE_ID in NUMBER)
+IS
+BEGIN
+INSERT INTO f15e4status (stat_id, f15e4stat_code_code_id, F15E4RFE_RFE_ID)
+VALUES (f15e4status_seq.nextval, 2, RFE_ID);
+END SUBMIT_RFE_PROC;
+/
