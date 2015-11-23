@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F2DD6EA-928C-4E57-071C-BE4B8DDDA6DE" name="F15E4RFE">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>A2F613E6-0957-CB9B-24A2-76E2A4E46B37</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RFE_id" id="B692BFDE-2047-8C00-BA23-4281EDCABD21">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>F21967C8-E45A-0662-968D-14438AA59617</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="expl" id="08BAD596-4809-E3B9-F217-9737416BAD36">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>2A6EFC5C-ADA1-6B35-45FC-1FF42D24B91D</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_pro" id="35B0FE88-E306-FB68-2D33-D7ED23632761">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>D2198FCC-F475-DD0E-7C6A-B3368E79791C</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_date" id="962304EB-4FA2-DE61-1F6B-31FB1B0ECE57">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>D8E2055C-9DC5-99DF-CCC9-CF9E0F3D8BD8</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4Emp_emp_id" id="ABC1609B-A828-A96E-7A66-9837AD5DBBC1">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>A1287C56-7747-B4C2-DB84-BAE2E6FD50EC</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9094CE91-8AC3-4F8F-54BA-EB30BE137756" referredColumn="2AFD324F-DC2B-82F4-16ED-B22B0A80F1E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59D86C1E-D563-2123-29B2-6D7B4EC51B7D" name="F15E4RFE_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>759C6E20-D5AF-CD45-3E51-AC8024507986</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B692BFDE-2047-8C00-BA23-4281EDCABD21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06E00F57-86D2-77B5-2521-6132B58776C2" name="F15E4RFE_F15E4Emp_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-23 23:27:53 UTC</createdTime>
+<generatorID>E9A5BD1E-8035-E6DF-9B77-F3099139CBC7</generatorID>
+<ownerDesignName>logical_friday_1pm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABC1609B-A828-A96E-7A66-9837AD5DBBC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
