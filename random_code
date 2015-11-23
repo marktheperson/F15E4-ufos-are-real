@@ -118,7 +118,6 @@ where c.F15E4RFE_rfe_id = :P23_RFE_ID
 and e.emp_id = c.F15E4EMP_EMP_ID
 and c.F15E4ROLE_CODE_ROLE_ID = R.role_ID
 
-
 // code for displaying requestor on approve page
 select E.EMP_NAME
 from F15E4emp E, F15E4RFE R
@@ -146,26 +145,24 @@ begin
     RFE_view_proc(r_id,s_id,:new.expl,:new.alt_pro,:new.review_date,emp_id);
 end;
 
-CREATE OR REPLACE PROCEDURE RFE_view_proc
-	(r_id in integer, s_id in integer, exp in varchar2, alt in varchar2, d in date, emp_id in integer)
-IS
-BEGIN
-insert into f15e4rfe (rfe_id,
-                                expl,
-                                alt_pro,
-                                review_date,
-                                F15E4EMP_EMP_ID)
-                                values
-                                    (r_id,
-                                    exp,
-                                    alt,
-                                    d,
-                                    emp_id);
-insert into f15e4status (stat_id,
-                                     F15E4STAT_CODE_CODE_ID,
-                                     F15E4RFE_RFE_ID)
-                                    values
-                                        (s_id,
-                                         100,
-                                         r_id);
-END RFE_view_proc;
+
+//approve page for Sys Admins
+select '' as approve_link,
+       r.RFE_ID as "RFE ID",
+       r.EMP_NAME as Requestor,
+       r.LAB_NAME as Lab,
+       r.STATUS as "Current Status",
+       r.EXPL as Explanation,
+       r.ALT_PRO as "Alternative Protections",
+       r.REVIEW_DATE as "Review Date"
+from RFE_VIEW r, F15E4Cont c, F15E4emp e, F15E4Role_code rc
+where e.emp_id = v('P1_LABEMP')
+and r.rfe_id = c.F15E4RFE_RFE_ID
+and e.emp_id = c.F15E4EMP_EMP_ID
+and e.emp_id in (select emp_id
+                  from F15E4emp
+                  where f15e4lab_lab_id = v('P1_LAB')
+                  AND typer = 'Sys Admin')
+and rc.role_id = c.F15E4Role_code_role_ID
+and rc.role = 'Sys Admin Approver'
+and r.status = 'Submitted'
