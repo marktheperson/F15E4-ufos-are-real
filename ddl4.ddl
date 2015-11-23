@@ -237,9 +237,105 @@ end;
 create or replace trigger update_active_flags
 before insert on F15E4STATUS
 for each row
-when (NEW.f15e4stat_code_code_id != '1')
+when (NEW.f15e4stat_code_code_id != 1)
 begin
 set_inactive_flags(:new.F15E4RFE_RFE_ID);
+end;
+/
+
+create or replace trigger add_requestor
+after insert on F15E4RFE
+for each row
+declare
+empval NUMBER;
+begin
+
+select e.emp_id into empval
+from F15E4EMP e
+where emp_id = :NEW.F15E4EMP_EMP_ID;
+
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.RFE_ID, empval, 1);
+end;
+/
+
+
+create or replace trigger add_SA_reviewer
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 2)
+declare
+empval NUMBER;
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Sys Admin'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID);
+
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.F15E4RFE_RFE_ID, empval, 3);
+end;
+/
+
+create or replace trigger add_LD_reviewer
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 6)
+declare
+empval NUMBER;
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Lab Director'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID);
+
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.F15E4RFE_RFE_ID, empval, 4);
+end;
+/
+
+
+create or replace trigger add_CH_reviewer
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 7)
+declare
+empval NUMBER;
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Chairperson';
+
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.F15E4RFE_RFE_ID, empval, 5);
+end;
+/
+
+create or replace trigger add_ed_reviewer
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 8)
+declare
+empval NUMBER;
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Exec Dir';
+
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.F15E4RFE_RFE_ID, empval, 6);
 end;
 /
 

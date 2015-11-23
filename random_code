@@ -1,3 +1,32 @@
+create or replace trigger add_SA_reviewer
+after insert on F15E4STATUS
+when (NEW.f15e4stat_code_code_id = 2)
+declare
+empval NUMBER;
+begin
+select emp_id into empval
+from F15E4EMP
+where typer = 'Sys Admin'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id);
+insert into F15E4Cont (F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, F15E4role_code_role_id)
+VALUES (:new.F15E4RFE_RFE_ID, empval, 3);
+end;
+/
+
+
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Sys Admin'
+AND F15E4LAB_LAB_ID = (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id);
+
+
 select r.rfe_id, e.emp_name, sc.rfe_status, s.effective_date, c.comments
 from F15E4RFE r, F15E4emp e, F15E4stat_code sc, F15E4comment c, F15E4stat s
 where r.requestor_id = e.emp_id
@@ -84,6 +113,20 @@ from F15E4cont c, F15E4emp e, F15E4ROLE_CODE r
 where c.F15E4RFE_rfe_id = :P23_RFE_ID
 and e.emp_id = c.F15E4EMP_EMP_ID
 and c.F15E4ROLE_CODE_ROLE_ID = R.role_ID
+
+
+// code for displaying requestor on approve page
+select E.EMP_NAME
+from F15E4emp E, F15E4RFE R
+where E.EMP_ID = R.F15E4EMP_EMP_ID
+AND R.RFE_ID = :P14_F15E4RFE_RFE_ID
+
+//code for displaying status on approve page
+select C.status
+from F15E4STATUS S, F15E4STAT_CODE C
+where S.F15E4RFE_RFE_ID = :P14_F15E4RFE_RFE_ID
+AND S.active = 'y'
+and S.F15E4STAT_CODE_CODE_ID = C.code_id
 
 create or replace trigger RFE_view_trigger
 instead of insert on RFE_view
