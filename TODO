@@ -18,3 +18,24 @@ admins:
 
 	add emp
 		all emp types from views
+
+//approve page for Sys Admins
+select '' as approve_link,
+       r.RFE_ID as "RFE ID",
+       r.EMP_NAME as Requestor,
+       r.LAB_NAME as Lab,
+       r.STATUS as "Current Status",
+       r.EXPL as Explanation,
+       r.ALT_PRO as "Alternative Protections",
+       r.REVIEW_DATE as "Review Date"
+from RFE_VIEW r, F15E4Cont c, F15E4emp e, F15E4Role_code rc
+where e.emp_id = v('P1_LABEMP')
+and r.rfe_id = c.F15E4RFE_RFE_ID
+and e.emp_id = c.F15E4EMP_EMP_ID
+and e.emp_id in (select emp_id
+                  from F15E4emp
+                  where f15e4lab_lab_id = v('P1_LAB')
+                  AND typer = 'Sys Admin')
+and rc.role_id = c.F15E4Role_code_role_ID
+and rc.role = 'Sys Admin Approver'
+and r.status = 'Submitted'
