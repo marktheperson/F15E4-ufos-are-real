@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="589C94DD-CD6F-A9D2-268B-864F76FDCA2B" name="F15E4stat_code">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>10B02C4C-68E6-E10B-C42C-2B592B48C882</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code_id" id="606F7B01-CB03-9843-A0F8-FE5E8FB45D13">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>C9265724-6CEF-C806-5141-7AEE8220AEF8</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="6C04831D-783F-54B1-23A6-0E6339C4C77F">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>0F250782-9564-4DC3-887D-5AFCA6D2A68C</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descr" id="DE291F90-32AF-7010-5F0A-8CC22FEBF52D">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>1251E32D-DB94-FA16-EDBB-4724668EAE92</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEA222F7-4BEE-F289-A263-5B50B52EDDC0" name="F15E4stat_code_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>DE3BB052-BA01-F8F8-039B-C8C49888B087</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="606F7B01-CB03-9843-A0F8-FE5E8FB45D13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

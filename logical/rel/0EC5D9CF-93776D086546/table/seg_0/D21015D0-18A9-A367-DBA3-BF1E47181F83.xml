@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D21015D0-18A9-A367-DBA3-BF1E47181F83" name="F15E4doc">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>DD98594D-491C-3A01-20CD-773A9DFB18DD</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="44691003-710A-8368-ED82-FE735BB62725">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>24DF2966-9D50-19B0-3C15-2916F31B2540</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="filename" id="AC5F3E29-DC3D-1DC4-57C3-B9AA549C1DC5">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>B9881AE6-7E5E-B5D8-B5C8-9C4B45E72BFA</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="EE105851-6D2B-3C12-EB3F-E40634C87249">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>7EF0E2B5-CF33-CAEE-F754-A9228436C012</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="364C8867-2635-DE2C-D2CE-7A8A8236F92A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>9C30BD1B-43C1-7B4F-974B-6190F5B86CD7</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_blob" id="07FA08B8-A0C9-3097-2C8C-1563F400F390">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>67A54881-76A6-E3C2-89CE-8C01CCDA507B</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="CF3C3F7F-58A4-6171-1CD6-FF83DA32C6B1">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>C4F766BA-34B1-0F33-D890-8D5B186A84C8</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="839354A0-97EA-C917-C718-7BA8F4716227">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>F80DA022-EAD3-E605-B214-7E14249F1A21</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E4RFE_RFE_id" id="27A8607A-B54C-2FA9-2679-909E5C6B7E5E">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>51218F2B-1A0A-2F24-97E6-2024DB58A88A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0FC3B79-8BB5-AEA3-4935-F3ACFB6142F7" referredColumn="3A1DB659-98AB-A9B8-8624-8B8D9D33A27F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFE8CE34-3E9E-4C84-BC6C-556F5413F438" name="F15E4doc_PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:45 UTC</createdTime>
+<generatorID>5AE66753-9B34-2869-1513-EDDAF785E1A2</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44691003-710A-8368-ED82-FE735BB62725"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08F73297-4BF0-E15F-FE37-35364308ADD5" name="F15E4doc_F15E4RFE_FK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-24 06:54:46 UTC</createdTime>
+<generatorID>314F68C5-4682-AB7E-50B5-17C4103E89EE</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A8607A-B54C-2FA9-2679-909E5C6B7E5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="10FC2435-98B2-EB4E-6A27-C277DD438BF9" name="F15E4Auth">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-02 22:12:29 UTC</createdTime>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_id" id="DD11C321-F3E6-31DC-3F1C-EA7E7A3E745A">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-02 22:13:26 UTC</createdTime>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="right" id="1EF4D6E6-A7DB-02C8-EF56-1ABBB5A95172">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-02 22:13:34 UTC</createdTime>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp id" id="EEE5E1B8-2267-BB8E-AA00-E54CD2DFFD34">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-02 22:16:24 UTC</createdTime>
+<generatorID>4B66DA9E-0552-ACDD-2B66-E9D9E2BF8C93</generatorID>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CAD1503A-0691-8009-B8F0-BEED48DF4934</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67481F99-5AEF-2F49-488B-BB8A7B1CD9F5" name="F15E4Auth PK">
+<createdBy>Mark1</createdBy>
+<createdTime>2015-11-02 22:13:33 UTC</createdTime>
+<ownerDesignName>new_conceptual_inclass</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD11C321-F3E6-31DC-3F1C-EA7E7A3E745A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
