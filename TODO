@@ -1,3 +1,6 @@
 TODO:
--fixed document report display value
--fix add comment on approve page
+-fix document report display value
+
+Reports
+ Listing of any RFE whose approval is due to expire within 35 days.
+ Listing of any RFE whose approval has expired within the last 35 days.

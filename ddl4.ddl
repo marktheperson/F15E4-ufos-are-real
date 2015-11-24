@@ -286,7 +286,7 @@ end;
 create or replace trigger add_LD_reviewer
 after insert on F15E4STATUS
 for each row
-when (NEW.f15e4stat_code_code_id = 6)
+when (NEW.f15e4stat_code_code_id = 2)
 declare
 empval NUMBER;
 begin
@@ -309,7 +309,7 @@ end;
 create or replace trigger add_CH_reviewer
 after insert on F15E4STATUS
 for each row
-when (NEW.f15e4stat_code_code_id = 7)
+when (NEW.f15e4stat_code_code_id = 2)
 declare
 empval NUMBER;
 begin
@@ -326,7 +326,7 @@ end;
 create or replace trigger add_ed_reviewer
 after insert on F15E4STATUS
 for each row
-when (NEW.f15e4stat_code_code_id = 8)
+when (NEW.f15e4stat_code_code_id = 2)
 declare
 empval NUMBER;
 begin
@@ -529,6 +529,33 @@ and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
 
 commval := f15e4comm_seq.nextval;
 comment := ('This request by ' || requestor || ' was approved by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
+end;
+/
+
+create or replace trigger add_SA_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 4)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4Emp
+where emp_id = v('P1_LABEMP');
+
+select emp_name into requestor
+from F15E4EMP
+where emp_id = empval;
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request was recalled by ' || requestor || ' on ' || sysdate || '.');
 
 insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
 VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
