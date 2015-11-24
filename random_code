@@ -102,6 +102,14 @@ stat_pk := f15e4status_seq.nextval;
 return stat_pk;
 END;
 
+//comment
+DECLARE
+fake_pk number;
+BEGIN
+fake_pk := f15e4comm_seq.nextval;
+return fake_pk;
+END;
+
 //setting the stat code automatically for a status update page
 DECLARE
 newval number;
