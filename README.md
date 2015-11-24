@@ -6,4 +6,8 @@ Group project for CS 347.
 Link to part1:
 https://apex.oracle.com/pls/apex/f?p=97580:1:3961189627612:::::
 Link to part2:
+<<<<<<< HEAD
 https://apex.oracle.com/pls/apex/f?p=98345%3A1%3A9958433002526%3A%3ANO
+=======
+https://apex.oracle.com/pls/apex/f?p=98345:1:117345321699216:::::
+>>>>>>> origin/master
