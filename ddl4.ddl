@@ -282,6 +282,7 @@ VALUES (:new.F15E4RFE_RFE_ID, empval, 3);
 end;
 /
 
+
 create or replace trigger add_LD_reviewer
 after insert on F15E4STATUS
 for each row
@@ -347,5 +348,189 @@ dateval date;
 begin
 dateval := sysdate + 365;
 :new.review_date := dateval;
+end;
+/
+
+create or replace trigger add_return_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 3)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+comm_name VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Sys Admin'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID);
+
+select emp_name into comm_name
+from F15E4EMP
+where emp_id = empval;
+
+select e.emp_name into requestor
+from F15E4EMP e, F15E4RFE r
+where e.emp_id = r.F15E4EMP_EMP_ID
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
+
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request was returned to ' || requestor || ' by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
+end;
+/
+
+
+create or replace trigger add_SA_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 6)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+comm_name VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Sys Admin'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID);
+
+select emp_name into comm_name
+from F15E4EMP
+where emp_id = empval;
+
+select e.emp_name into requestor
+from F15E4EMP e, F15E4RFE r
+where e.emp_id = r.F15E4EMP_EMP_ID
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
+
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request by ' || requestor || ' was approved by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
+end;
+/
+
+create or replace trigger add_LD_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 7)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+comm_name VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Lab Director'
+AND F15E4LAB_LAB_ID in (select lab_id
+from F15E4EMP e, F15E4RFE r, F15E4LAB l
+where e.emp_id = r.F15E4EMP_EMP_ID
+and e.F15E4LAB_LAB_ID = l.lab_id
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID);
+
+select emp_name into comm_name
+from F15E4EMP
+where emp_id = empval;
+
+select e.emp_name into requestor
+from F15E4EMP e, F15E4RFE r
+where e.emp_id = r.F15E4EMP_EMP_ID
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request by ' || requestor || ' was approved by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
+end;
+/
+
+create or replace trigger add_CH_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 8)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+comm_name VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Chairperson';
+
+select emp_name into comm_name
+from F15E4EMP
+where emp_id = empval;
+
+select e.emp_name into requestor
+from F15E4EMP e, F15E4RFE r
+where e.emp_id = r.F15E4EMP_EMP_ID
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
+
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request by ' || requestor || ' was approved by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
+end;
+/
+
+create or replace trigger add_ED_comment
+after insert on F15E4STATUS
+for each row
+when (NEW.f15e4stat_code_code_id = 9)
+declare
+empval NUMBER;
+requestor VARCHAR2(100);
+comm_name VARCHAR2(100);
+commval NUMBER;
+comment VARCHAR2(1000);
+begin
+
+select emp_id into empval
+from F15E4EMP
+where typer = 'Exec Dir';
+
+select emp_name into comm_name
+from F15E4EMP
+where emp_id = empval;
+
+select e.emp_name into requestor
+from F15E4EMP e, F15E4RFE r
+where e.emp_id = r.F15E4EMP_EMP_ID
+and r.rfe_id = :NEW.F15E4RFE_RFE_ID;
+
+commval := f15e4comm_seq.nextval;
+comment := ('This request by ' || requestor || ' was approved by ' || comm_name || ' on ' || sysdate || '.');
+
+insert into F15E4COMM (comm_id, F15E4RFE_RFE_ID, F15E4EMP_EMP_ID, details)
+VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
 end;
 /
