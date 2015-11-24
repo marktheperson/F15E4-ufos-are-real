@@ -535,7 +535,7 @@ VALUES (commval, :new.F15E4RFE_RFE_ID, empval, comment);
 end;
 /
 
-create or replace trigger add_SA_comment
+create or replace trigger add_RECALL_comment
 after insert on F15E4STATUS
 for each row
 when (NEW.f15e4stat_code_code_id = 4)

@@ -110,6 +110,15 @@ fake_pk := f15e4comm_seq.nextval;
 return fake_pk;
 END;
 
+
+//logged in emp
+declare
+fake_emp number;
+BEGIN
+fake_emp := v('P1_LABEMP');
+return fake_emp;
+end;
+
 //setting the stat code automatically for a status update page
 DECLARE
 newval number;
