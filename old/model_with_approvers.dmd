@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="model_with_approvers" id="B3ADEC37-E313-B98B-8053-564135E7301E" version="3.5">
-<createdBy>Mark1</createdBy>
-<createdTime>2015-11-02 22:05:16 UTC</createdTime>
-<ownerDesignName>new_conceptual_inclass</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>B3ADEC37-E313-B98B-8053-564135E7301E</designId>
-</OSDM_Design>

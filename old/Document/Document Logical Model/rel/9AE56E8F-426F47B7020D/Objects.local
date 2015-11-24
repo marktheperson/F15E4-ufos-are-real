@@ -1,4 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="Table" objectID="2AACC628-2EDB-4C3C-AE2C-726B69506337" name="F15A0_document" seqName="seg_0"/>
-</oracle.dbtools.crest.model.design.relational.RelationalDesign>
